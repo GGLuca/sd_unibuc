@@ -1,6 +1,11 @@
-## Informații curs
+# Metodologii de cercetare cantitativă în psihologie
+Ore curs: 14
+Ore seminar: 14
+ECTS: 8
+Finalizare: Colocviu
 
-### Instructor:
+
+*Instructor*:
 
 George Gunnesch-Luca 
 
@@ -8,15 +13,17 @@ George Gunnesch-Luca
 
 [E-mail](george.gunnesch-luca@fau.de)
 
-Orar:
+*Orar*:
+Inca necunoscut
 
-## Pagina:
-WWW: https://ggluca.github.io/sd_unibuc/
+*Cursuri* (locație și oră)
+Inca necunoscut
 
-Cursuri (locație și oră)
+*Lectură*:
 
-Lectură:
-Obligatoriu: 
-Optional: 
+**Obligatoriu**: 
+**Optional**: 
 
-Cunoștințe anterioare:
+*Cunoștințe anterioare*:
+
+## Obiectivele cursului
