@@ -1,19 +1,17 @@
 # Metodologii de cercetare cantitativă în psihologie
 ### Școala Doctorală Psihologie și Științele Educației / UniBuc 
 
-##â Info curs:
+__Detalii curs__:  
+**Ore curs**: 14  
+**Ore seminar**: 14 
+**ECTS**: 8 
+**Finalizare**: Colocviu  
 
 __Instructor__:  
 George Gunnesch-Luca
 [Pagină web](https://www.psychologie.rw.fau.de/team/wissenschaftliche-mitarbeiterinnen/george-luca/)
 Slack: @**  
 Email: *george.gunnesch-luca at fau.de*  
-
-__Detalii curs__:  
-**Ore curs**: 14
-**Ore seminar**: 14
-**ECTS**: 8
-**Finalizare**: Colocviu
 
 __Pagina cursului__:    
 WWW: https://github.com/GGLuca/sd_unibuc  
