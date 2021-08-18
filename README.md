@@ -24,6 +24,8 @@ __Textbook__:
 Required: [_Advanced data analysis from an elementary point of view_](https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/)  
 Optional: [_Introduction to Statistical Learning_](http://www-bcf.usc.edu/~gareth/ISL/)
 
+
+
 __Prerequisite__:  
 STAT-S 431 or equivalent or permission of the instructor.
 #
