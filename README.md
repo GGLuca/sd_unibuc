@@ -36,6 +36,7 @@ Instalați R de la adresa https://cran.r-project.org/. Este disponibil pentru Ma
 
 Instalați RStudio de la https://www.rstudio.com/products/rstudio/download/. Alegeți "RStudio Desktop" gratuit (până la capăt, în stânga). Puteți rula R și fără RStudio, dar vă recomand cu căldură să folosiți RStudio (pentru că!).
 
+Nu știți nimic despre R sau vă e frică de el? [Nu-i bai!](https://youtu.be/0DF4Cb-NeyM?t=1583). Până înregistrez ceva nou, aveți la dispozitie o serie de workshop-uri sau tutoriale, ca de exemplu [excelentul workshop](https://www.youtube.com/playlist?list=PLzH57eq4okPYPdHc-eJV7FnAWw_iHHvNk) a lui Cristi Opariuc-Dan.
 
 # Conținut
 
