@@ -7,11 +7,10 @@ George Gunnesch-Luca
 Birou: Adresa  
 Website: http://
 Slack: @**  
-Email: **  
+Email: *g.luca*  
 
 __Cand __:  
-Me: Wednesday 1--3pm   
-Gunchang: Monday 1--2pm
+Luni - Marti 1--3pm   
 
 __Pagina cursului__:    
 WWW: https://github.com/GGLuca/sd_unibuc  
