@@ -9,14 +9,17 @@ George Gunnesch-Luca
 Slack: @**  
 Email: *george.gunnesch-luca at fau.de*  
 
-__Când __:  
-Se va anunța la timp
+__Detalii curs__:  
+**Ore curs**: 14
+**Ore seminar**: 14
+**ECTS**: 8
+**Finalizare**: Colocviu
 
 __Pagina cursului__:    
 WWW: https://github.com/GGLuca/sd_unibuc  
 Slack: https://stat-s432-sp17.slack.com/
 
-__Orele de curs__:  
+__Orele și locația cursului__:  
 Se va anunța la timp
 
 __Obiective__:
@@ -27,14 +30,6 @@ Optional: [_Introduction to Statistical Learning_](http://www-bcf.usc.edu/~garet
 
 __Cunoștințe anterioare__:  
 STAT-S 431 or equivalent or permission of the instructor.
-#
-
-text.
-
-Ore curs: 14
-Ore seminar: 14
-ECTS: 8
-Finalizare: Colocviu
 
 
 
