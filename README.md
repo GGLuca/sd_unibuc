@@ -5,7 +5,7 @@ __Detalii curs__:
 Ore curs: 14  
 Ore seminar: 14 
 ECTS: 8 
-Finalizare: Colocviu  
+Finalizare: Colocviu (Dată nespecificată încă)
 
 __Instructor__:  
 George Gunnesch-Luca  
