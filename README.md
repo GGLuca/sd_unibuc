@@ -3,8 +3,8 @@
 
 __Detalii curs__:  
 Ore curs: 14  
-Ore seminar: 14 
-ECTS: 8 
+Ore seminar: 14  
+ECTS: 8  
 Finalizare: Colocviu (Dată nespecificată încă)
 
 __Instructor__:  
@@ -20,11 +20,11 @@ Slack: https://stat-s432-sp17.slack.com/
 __Orele și locația cursului__:  
 Se va anunța la timp  
 
-__Obiective__:
+__Obiective__:  
 
 __Lectură__:  
 Required: [_Advanced data analysis from an elementary point of view_](https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/)  
-Optional: [_Introduction to Statistical Learning_](http://www-bcf.usc.edu/~gareth/ISL/)
+Optional: [_Introduction to Statistical Learning_](http://www-bcf.usc.edu/~gareth/ISL/)  
 
 __Cunoștințe anterioare__:  
 STAT-S 431 or equivalent or permission of the instructor.
