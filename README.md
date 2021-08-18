@@ -26,7 +26,10 @@ Optional: [_Introduction to Statistical Learning_](http://www-bcf.usc.edu/~garet
 
 __Prerequisite__:  
 STAT-S 431 or equivalent or permission of the instructor.
-# 
+#
+
+text.
+
 Ore curs: 14
 Ore seminar: 14
 ECTS: 8
