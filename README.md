@@ -1,31 +1,31 @@
-# Syllabus - Metodologii de cercetare cantitativă în psihologie
-# Școala Doctorală Psihologie și Științele Educației / UniBuc 
+# Metodologii de cercetare cantitativă în psihologie
+### Școala Doctorală Psihologie și Științele Educației / UniBuc 
 
-## Info curs:
+##â Info curs:
+
 __Instructor__:  
-George Gunnesch-Luca  
-Birou: Adresa  
-Website: http://
+George Gunnesch-Luca
+[Pagină web](https://www.psychologie.rw.fau.de/team/wissenschaftliche-mitarbeiterinnen/george-luca/)
 Slack: @**  
-Email: *g.luca*  
+Email: *george.gunnesch-luca at fau.de*  
 
-__Cand __:  
-Luni - Marti 1--3pm   
+__Când __:  
+Se va anunța la timp
 
 __Pagina cursului__:    
 WWW: https://github.com/GGLuca/sd_unibuc  
 Slack: https://stat-s432-sp17.slack.com/
 
 __Orele de curs__:  
-TR 9:30 - 10:45, BH 148
+Se va anunța la timp
 
-__Textbook__:  
+__Obiective__:
+
+__Lectură__:  
 Required: [_Advanced data analysis from an elementary point of view_](https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/)  
 Optional: [_Introduction to Statistical Learning_](http://www-bcf.usc.edu/~gareth/ISL/)
 
-
-
-__Prerequisite__:  
+__Cunoștințe anterioare__:  
 STAT-S 431 or equivalent or permission of the instructor.
 #
 
@@ -37,25 +37,5 @@ ECTS: 8
 Finalizare: Colocviu
 
 
-*Instructor*:
 
-George Gunnesch-Luca 
 
-[Pagină web](https://www.psychologie.rw.fau.de/team/wissenschaftliche-mitarbeiterinnen/george-luca/)
-
-[E-mail](george.gunnesch-luca@fau.de)
-
-*Orar*:
-Inca necunoscut
-
-*Cursuri* (locație și oră)
-Inca necunoscut
-
-*Lectură*:
-
-**Obligatoriu**: 
-**Optional**: 
-
-*Cunoștințe anterioare*:
-
-## Obiectivele cursului
