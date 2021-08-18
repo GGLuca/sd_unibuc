@@ -11,7 +11,7 @@ __Instructor__:
 George Gunnesch-Luca :expressionless:  
 [Pagină web](https://www.psychologie.rw.fau.de/team/wissenschaftliche-mitarbeiterinnen/george-luca/)  
 Slack: @**  
-Email: *george.gunnesch-luca at fau.de*  
+:e-mail:: *george.gunnesch-luca at fau.de*  
 
 __Pagina cursului__:    
 WWW: https://github.com/GGLuca/sd_unibuc  
