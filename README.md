@@ -26,16 +26,6 @@ Optional: [_Introduction to Statistical Learning_](http://www-bcf.usc.edu/~garet
 
 __Prerequisite__:  
 STAT-S 431 or equivalent or permission of the instructor.
-
-credentials::set_github_pat("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")
-
-
-
-
-
-
-
-
 # 
 Ore curs: 14
 Ore seminar: 14
