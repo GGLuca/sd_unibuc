@@ -8,7 +8,7 @@ ECTS: 8
 Finalizare: Colocviu (Dată nespecificată încă)
 
 __Instructor__:  
-George Gunnesch-Luca  
+George Gunnesch-Luca :expressionless:  
 [Pagină web](https://www.psychologie.rw.fau.de/team/wissenschaftliche-mitarbeiterinnen/george-luca/)  
 Slack: @**  
 Email: *george.gunnesch-luca at fau.de*  
@@ -36,5 +36,3 @@ STAT-S 431 or equivalent or permission of the instructor.
 3. Corelații și regresie Bayesiana
 3. Modele Aditive Generalizate
 4. 
-
-
