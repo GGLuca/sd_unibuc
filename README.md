@@ -29,6 +29,14 @@ Optional: [_Introduction to Statistical Learning_](http://www-bcf.usc.edu/~garet
 __Cunoștințe anterioare__:  
 STAT-S 431 or equivalent or permission of the instructor.
 
+__Software necesar__:  
+Pentru laboratoare și pentru o mare parte din exemplele din clasă, vom folosi R, un limbaj de programare statistică open-source (și gratuit). Mai jos, veți găsi instrucțiuni pentru a instala R și RStudio pe calculatorul personal (recomandarea mea).  
+
+Instalați R de la adresa https://cran.r-project.org/. Este disponibil pentru Mac OS, Windows și Linux. Alegeți linkul corespunzător, descărcați și instalați.  
+
+Instalați RStudio de la https://www.rstudio.com/products/rstudio/download/. Alegeți "RStudio Desktop" gratuit (până la capăt, în stânga). Puteți rula R și fără RStudio, dar vă recomand cu căldură să folosiți RStudio (pentru că!).
+
+
 # Conținut
 
 1. Elemente de statistica 
