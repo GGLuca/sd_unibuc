@@ -30,11 +30,11 @@ __Cunoștințe anterioare__:
 STAT-S 431 or equivalent or permission of the instructor.
 
 __Software necesar__:  
-Pentru laboratoare și pentru o mare parte din exemplele din clasă, vom folosi R, un limbaj de programare statistică open-source (și gratuit). Mai jos, veți găsi instrucțiuni pentru a instala R și RStudio pe calculatorul personal (recomandarea mea).  
+Pentru laboratoare și pentru o mare parte din exemplele din clasă, vom folosi R, un limbaj de programare statistică open-source (și gratuit). Mai jos, veți găsi instrucțiuni extrem de sumare pentru a instala R și RStudio pe calculatorul personal (recomandarea mea).  
 
-Instalați R de la adresa https://cran.r-project.org/. Este disponibil pentru Mac OS, Windows și Linux. Alegeți linkul corespunzător, descărcați și instalați.  
+1. Instalați R de la adresa https://cran.r-project.org/. Este disponibil pentru Mac OS, Windows și Linux. Alegeți linkul corespunzător, descărcați și instalați.  
 
-Instalați RStudio de la https://www.rstudio.com/products/rstudio/download/. Alegeți "RStudio Desktop" gratuit (până la capăt, în stânga). Puteți rula R și fără RStudio, dar vă recomand cu căldură să folosiți RStudio (pentru că!).
+2. Instalați RStudio de la https://www.rstudio.com/products/rstudio/download/. Alegeți "RStudio Desktop" gratuit (până la capăt, în stânga). Puteți rula R și fără RStudio, dar vă recomand cu căldură să folosiți RStudio (pentru că!).
 
 Nu știți nimic despre R sau vă e frică de el? [Nu-i bai!](https://youtu.be/0DF4Cb-NeyM?t=1583). Până înregistrez ceva nou, aveți la dispozitie o serie de workshop-uri sau tutoriale, ca de exemplu [excelentul workshop](https://www.youtube.com/playlist?list=PLzH57eq4okPYPdHc-eJV7FnAWw_iHHvNk) a lui Cristi Opariuc-Dan.
 
