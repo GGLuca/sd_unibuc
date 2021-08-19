@@ -1,7 +1,15 @@
 # Metodologii de cercetare cantitativă în psihologie
 ### Școala Doctorală Psihologie și Științele Educației / UniBuc 
 
-![version](https://img.shields.io/badge/Continut-20%25%20gata-red)
+![version](https://img.shields.io/badge/Continut-20%25%20gata-red) ![GitHub last commit](https://img.shields.io/github/last-commit/GGLuca/sd_unibuc?label=last%20update%3A%20&style=flat-square)
+
+__Obiective__:  
+
+Acest curs oferă o introducere în subiecte avansate în statistică sau metodologie, cu accent pe înțelegerea inferenței în științele comportamentale și sociale. Cursul are ca scop consolidarea și dezvoltarea conceptuală cu privire la metodologia cercetării iar pentru asta vom aborda printre altele, procese ce pot fi uneori destul de complexe precum testarea ipotezelor sau cum lucrul cu modelele statistice.  
+
+O alta parte, la fel de importantă este familiarizarea cu evoluții recente în cercetarea științifică din domeniul psihologiei. De fapt, în mare parte, acest curs este structurat si centrat pe paradigma probabilității Bayesiane. Vom parcurge împreună diferențele majore între abordarea Fischeriană și cea clasică, ce este incertitudinea și vom aplica modele complete Bayesiene.
+
+De asemenea, este un curs practic în care învățarea conceptelor statistice și construirea de modele în R merg mână în mână. De aceea una din cerințe importante este să aveți un laptop cu R deja instalat (vezi capitolul *software necesar* de mai jos.). Vom învăța cum să vizualizăm, să gestionăm și să simulăm date în R. Vom lucra cu platforme de date și partajare de cod (*oh the joy* :)
 
 __Detalii curs__:  
 Ore curs: 14  
@@ -20,15 +28,6 @@ Slack: https://sdfpse.slack.com
 
 __Orele și locația cursului__:  
 Se va anunța la timp  
-
-__Obiective__:  
-
-Acest curs oferă o introducere în subiecte avansate în statistică sau metodologie, cu accent pe înțelegerea inferenței în științele comportamentale și sociale. Cursul are ca scop consolidarea și dezvoltarea conceptuală cu privire la metodologia cercetării iar pentru asta vom aborda printre altele, procese ce pot fi uneori destul de complexe precum testarea ipotezelor sau cum lucrul cu modelele statistice.  
-
-O alta parte, la fel de importantă este familiarizarea cu evoluții recente în cercetarea științifică din domeniul psihologiei. De fapt, în mare parte, acest curs este structurat si centrat pe paradigma probabilității Bayesiane. Vom parcurge împreună diferențele majore între abordarea Fischeriană și cea clasică, ce este incertitudinea și vom aplica modele complete Bayesiene.
-
-De asemenea, este un curs practic în care învățarea conceptelor statistice și construirea de modele în R merg mână în mână. De aceea una din cerințe importante este să aveți un laptop cu R deja instalat (vezi capitolul *software necesar* de mai jos.). Vom învăța cum să vizualizăm, să gestionăm și să simulăm date în R. Vom lucra cu platforme de date și partajare de cod (*oh the joy* :)
-
 
 __Lectură__:  
 Required: [_Advanced data analysis from an elementary point of view_](https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/)  
