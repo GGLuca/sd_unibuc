@@ -8,7 +8,7 @@ ECTS: 8
 Finalizare: Colocviu (Dată nespecificată încă)
 
 __Instructor__:  
-George Gunnesch-Luca :expressionless:  
+:expressionless: George Gunnesch-Luca  
 [Pagină web](https://www.psychologie.rw.fau.de/team/wissenschaftliche-mitarbeiterinnen/george-luca/)  
 Slack: @**  
 :e-mail:: *george.gunnesch-luca at fau.de*  
@@ -36,12 +36,19 @@ Pentru laboratoare și pentru o mare parte din exemplele din clasă, vom folosi 
 
 2. Instalați RStudio de la https://www.rstudio.com/products/rstudio/download/. Alegeți "RStudio Desktop" gratuit (până la capăt, în stânga). Puteți rula R și fără RStudio, dar vă recomand cu căldură să folosiți RStudio (pentru că!).
 
-Nu știți nimic despre R sau vă e frică de el? [Nu-i bai!](https://youtu.be/0DF4Cb-NeyM?t=1583). Până înregistrez ceva nou, aveți la dispozitie o serie de workshop-uri sau tutoriale, ca de exemplu [excelentul workshop](https://www.youtube.com/playlist?list=PLzH57eq4okPYPdHc-eJV7FnAWw_iHHvNk) a lui Cristi Opariuc-Dan.
+Nu știți nimic despre R sau vă e frică de el? [Nu-i bai!](https://youtu.be/0DF4Cb-NeyM?t=1583). Până termin de înregistrat cursul nou, aveți la dispozitie o serie de workshop-uri sau tutoriale, ca de exemplu [excelentul workshop](https://www.youtube.com/playlist?list=PLzH57eq4okPYPdHc-eJV7FnAWw_iHHvNk) a lui Cristi Opariuc-Dan.
 
 # Conținut
 
+
 1. Elemente de statistica 
-2. Inferență Bayesiană / Elemente introductive
+2. Analiza Bayesiană a datelor I
+  2a. Comparație între analiza frecventistă și analiza bayesiană a datelor.
+  2b. Obiecții la testarea frecventistă a ipotezei nule.
+  2c. Avantajele analizei bayesiene a datelor.
+  2d. Modele bayesiene de cunoaștere.
+  2e. Un exemplu simplu de aruncare a unei monede.
+  2f. Distribuția posterioară, anterioară, *likelyhood*, mărimea eșantionului.
 3. Corelații și regresie Bayesiana
 3. Modele Aditive Generalizate
 4. 
