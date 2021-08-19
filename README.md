@@ -54,6 +54,22 @@ Analiza Bayesiană a datelor, Partea I
 Analiza Bayesiană a datelor, Partea II  
 Analiza Bayesiană a datelor, Partea II  
 
+# Resurse gratuite
+z
 
-„
+<ul>
+<li><a href="https://r4ds.had.co.nz/">R for Data Science</a>: Introduction to data manipulation and visualization in R.</li>
+<li><a href="http://socviz.co/">Data visualization: A practical introduction</a>: Data visualization in R.</li>
+<li><a href="https://michael-franke.github.io/intro-data-analysis/index.html">An Introduction to Data Analysis</a>: Introduction to data analysis in R including plotting, data wrangling, and Bayesian data analysis.</li>
+<li><a href="https://statlearning.com/">An introduction to statistical learning</a>: Introduction to statistical learning including regression, classification, resampling, and unsupervised learning techniques.</li>
+<li><a href="https://moderndive.com/">An Introduction to Statistical and Data Sciences via R</a>: Free online book that introduces statistical concepts using many of the same tools we are using in class (<code>ggplot2</code>, <code>dplyr</code>, sampling methods, &hellip;).</li>
+<li><a href="https://www.openintro.org/book/stat/">OpenIntro Statistics</a>: Introduction to statistics.</li>
+<li><a href="https://statsthinking21.org/">Statistical thinking for the 21st century</a>: Online book written by Russ Poldrack for the undergraduate statistics course in psychology here at Stanford (Psych 10).<br /></li>
+<li><a href="https://statswithr.github.io/book/index.html">An introduction to Bayesian thinking</a>: Companion book to the <a href="https://www.coursera.org/specializations/statistics">Statistics with R</a> course on coursera.<br /></li>
+<li><a href="https://crumplab.github.io/statistics/">Answering questions with data</a>: Introductory statistics textbook.</li>
+<li><a href="http://adv-r.had.co.nz/">Advanced R</a>: The book is designed primarily for R users who want to improve their programming skills and understanding of the language.</li>
+<li><a href="https://moderndive.com/index.html">Statistical Inference via Data Science: A moderndive into R and the tidyverse</a>: A gentle introduction to the practice of analyzing data and answering questions using data the way data scientists, statisticians, data journalists, and other researchers would.</li>
+<li><a href="https://benwhalley.github.io/just-enough-r/">Just enough R</a>: Basic introduction into some of the core R concepts.</li>
+<li><a href="https://www.tmwr.org/">Tidy Modeling with R</a>: Introduction to modeling in R using the tidyverse.</li>
+</ul>
 
