@@ -10,17 +10,23 @@ Finalizare: Colocviu (Dată nespecificată încă)
 __Instructor__:  
 :expressionless: George Gunnesch-Luca  
 [Pagină web](https://www.psychologie.rw.fau.de/team/wissenschaftliche-mitarbeiterinnen/george-luca/)  
-Slack: sdfpse.slack.com  
 Email: g.luca[at]drd.unibuc.ro  
 
 __Pagina cursului__:    
-WWW: https://github.com/GGLuca/sd_unibuc  
-Slack: https://stat-s432-sp17.slack.com/  
+www: https://github.com/GGLuca/sd_unibuc  
+Slack: https://sdfpse.slack.com  
 
 __Orele și locația cursului__:  
 Se va anunța la timp  
 
 __Obiective__:  
+
+Acest curs oferă o introducere în subiecte avansate în statistică sau metodologie, cu accent pe înțelegerea inferenței în științele comportamentale și sociale. Cursul are ca scop consolidarea și dezvoltarea conceptuală cu privire la metodologia cercetării iar pentru asta vom aborda printre altele, procese ce pot fi uneori destul de complexe precum testarea ipotezelor sau cum lucrul cu modelele statistice.  
+
+O alta parte, la fel de importantă este familiarizarea cu evoluții recente în cercetarea științifică din domeniul psihologiei. De fapt, în mare parte, acest curs este structurat si centrat pe paradigma probabilității Bayesiane. Vom parcurge împreună diferențele majore între abordarea Fischeriană și cea clasică, ce este incertitudinea și vom aplica modele complete Bayesiene.
+
+De asemenea, este un curs practic în care învățarea conceptelor statistice și construirea de modele în R merg mână în mână. De aceea una din cerințe importante este să aveți un laptop cu R deja instalat (vezi capitolul *software necesar* de mai jos.). Vom învăța cum să vizualizăm, să gestionăm și să simulăm date în R. Vom lucra cu platforme de date și partajare de cod (*oh the joy* :)
+
 
 __Lectură__:  
 Required: [_Advanced data analysis from an elementary point of view_](https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/)  
@@ -40,7 +46,10 @@ Nu știți nimic despre R sau vă e frică de el? [Nu-i bai!](https://youtu.be/0
 
 # Conținut
 
-Introducere  
+1. Introducere  
+  * Condiții formale
+  * Organizarea cursului
+  * 
 Analiza Bayesiană a datelor, Partea I  
 Analiza Bayesiană a datelor, Partea II  
 Analiza Bayesiană a datelor, Partea II  
