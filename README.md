@@ -43,12 +43,12 @@ Nu știți nimic despre R sau vă e frică de el? [Nu-i bai!](https://youtu.be/0
 
 1. Elemente de statistica 
 2. Analiza Bayesiană a datelor I
-  2a. Comparație între analiza frecventistă și analiza bayesiană a datelor.
-  2b. Obiecții la testarea frecventistă a ipotezei nule.
-  2c. Avantajele analizei bayesiene a datelor.
-  2d. Modele bayesiene de cunoaștere.
-  2e. Un exemplu simplu de aruncare a unei monede.
-  2f. Distribuția posterioară, anterioară, *likelyhood*, mărimea eșantionului.
+  2a. Comparație între analiza frecventistă și analiza bayesiană a datelor.  
+  2b. Obiecții la testarea frecventistă a ipotezei nule.  
+  2c. Avantajele analizei bayesiene a datelor.  
+  2d. Modele bayesiene de cunoaștere.  
+  2e. Un exemplu simplu de aruncare a unei monede.  
+  2f. Distribuția posterioară, anterioară, *likelyhood*, mărimea eșantionului.  
 3. Corelații și regresie Bayesiana
 3. Modele Aditive Generalizate
 4. 
