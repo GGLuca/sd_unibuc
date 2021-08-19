@@ -1,7 +1,7 @@
 # Metodologii de cercetare cantitativă în psihologie
 ### Școala Doctorală Psihologie și Științele Educației / UniBuc 
 
-![version](https://img.shields.io/badge/version-1.2.3-blue)
+![version](https://img.shields.io/badge/Continut-20%25%20gata-red)
 
 __Detalii curs__:  
 Ore curs: 14  
