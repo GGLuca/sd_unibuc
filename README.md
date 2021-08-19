@@ -1,7 +1,7 @@
 # Metodologii de cercetare cantitativă în psihologie
 ### Școala Doctorală Psihologie și Științele Educației / UniBuc 
 
-![version](https://img.shields.io/badge/Continut-20%25%20gata-red) ![GitHub last commit](https://img.shields.io/github/last-commit/GGLuca/sd_unibuc?label=last%20update%3A%20&style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/GGLuca/sd_unibuc?label=last%20update%3A%20&style=flat-square)
 
 __Obiective__:  
 
