@@ -1,6 +1,8 @@
 # Metodologii de cercetare cantitativă în psihologie
 ### Școala Doctorală Psihologie și Științele Educației / UniBuc 
 
+![version](https://img.shields.io/badge/version-1.2.3-blue)
+
 __Detalii curs__:  
 Ore curs: 14  
 Ore seminar: 14  
@@ -55,11 +57,18 @@ Analiza Bayesiană a datelor, Partea II
 Analiza Bayesiană a datelor, Partea II  
 
 # Resurse gratuite
-z
+
+[R for Data Science](https://r4ds.had.co.nz) O introducere în manipularea si vizualizarea datelor în R. 
+[Data visualization: A practical introduction](http://socviz.co) O introducere în vizualizare, bineînțeles în R.
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
 
 <ul>
-<li><a href="https://r4ds.had.co.nz/">R for Data Science</a>: Introduction to data manipulation and visualization in R.</li>
-<li><a href="http://socviz.co/">Data visualization: A practical introduction</a>: Data visualization in R.</li>
 <li><a href="https://michael-franke.github.io/intro-data-analysis/index.html">An Introduction to Data Analysis</a>: Introduction to data analysis in R including plotting, data wrangling, and Bayesian data analysis.</li>
 <li><a href="https://statlearning.com/">An introduction to statistical learning</a>: Introduction to statistical learning including regression, classification, resampling, and unsupervised learning techniques.</li>
 <li><a href="https://moderndive.com/">An Introduction to Statistical and Data Sciences via R</a>: Free online book that introduces statistical concepts using many of the same tools we are using in class (<code>ggplot2</code>, <code>dplyr</code>, sampling methods, &hellip;).</li>
