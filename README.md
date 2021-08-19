@@ -58,10 +58,10 @@ Analiza Bayesiană a datelor, Partea II
 
 # Resurse gratuite
 
-<ul>
-[R for Data Science](https://r4ds.had.co.nz) O introducere în manipularea si vizualizarea datelor în R.   
-[Data visualization: A practical introduction](http://socviz.co) O introducere în vizualizare, bineînțeles în R.  
-</ul>
+## Pentru R
+
++ [R for Data Science](https://r4ds.had.co.nz) O introducere în manipularea si vizualizarea datelor în R.   
++ [Data visualization: A practical introduction](http://socviz.co) O introducere în vizualizare, bineînțeles în R.  
 
 
 []()
