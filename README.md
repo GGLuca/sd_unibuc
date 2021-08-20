@@ -30,11 +30,14 @@ __Orele și locația cursului__:
 Se va anunța la timp  
 
 __Lectură__:  
-Required: [_Advanced data analysis from an elementary point of view_](https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/)  
-Optional: [_Introduction to Statistical Learning_](http://www-bcf.usc.edu/~gareth/ISL/)  
+Obligatoriu: 
+
+Opțional: 
 
 __Cunoștințe anterioare__:  
-STAT-S 431 or equivalent or permission of the instructor.
+Cursul necesită o ințelegere a fundamentelor analizei statistice și metodologiei cercetării. 
+
+Dacă 
 
 __Software necesar__:  
 Pentru laboratoare și pentru o mare parte din exemplele din clasă, vom folosi R, un limbaj de programare statistică open-source (și gratuit). Mai jos, veți găsi instrucțiuni extrem de sumare pentru a instala R și RStudio pe calculatorul personal (recomandarea mea).  
