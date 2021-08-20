@@ -5,7 +5,7 @@
 
 __Obiective__:  
 
-Acest curs este destinat studenților înscriși la Școala Doctorală pentru domeniile psihologie și științe ale educației. Oferă o introducere în subiecte avansate de statistică sau metodologie, cu accent pe înțelegerea inferenței în științele comportamentale și sociale.  Cursul are ca scop consolidarea și dezvoltarea conceptuală cu privire la metodologia cercetării, abordând printre altele, procese ce pot fi uneori destul de complexe precum testarea ipotezelor sau cum lucrul cu modelele statistice.  
+Acest curs este destinat studenților înscriși la ,[Școala Doctorală pentru domeniile psihologie și științe ale educației](http://doctorat.unibuc.ro/psihologie/prezentarea-scolii/). Oferă o introducere în subiecte avansate de statistică sau metodologie, cu accent pe înțelegerea inferenței în științele comportamentale și sociale.  Cursul are ca scop consolidarea și dezvoltarea conceptuală cu privire la metodologia cercetării, abordând printre altele, procese ce pot fi uneori destul de complexe precum testarea ipotezelor sau cum lucrul cu modelele statistice.  
 
 O alta parte, la fel de importantă este familiarizarea cu evoluții recente în cercetarea științifică din domeniul psihologiei. De fapt, în mare parte, acest curs este structurat si centrat pe paradigma probabilității Bayesiane. Vom parcurge împreună diferențele majore între abordarea Fischeriană și cea clasică, ce este incertitudinea și vom aplica modele complete Bayesiene.  
 
