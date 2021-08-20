@@ -5,9 +5,7 @@
 
 __Obiective__:  
 
-Acest curs este destinat studenților înscriși la Școala Doctorală pentru domeniile psihologie și științe ale educației. Oferă o introducere în subiecte avansate de statistică sau metodologie, cu accent pe înțelegerea inferenței în științele comportamentale și sociale.  
-
-Cursul are ca scop consolidarea și dezvoltarea conceptuală cu privire la metodologia cercetării, abordând printre altele, procese ce pot fi uneori destul de complexe precum testarea ipotezelor sau cum lucrul cu modelele statistice.  
+Acest curs este destinat studenților înscriși la Școala Doctorală pentru domeniile psihologie și științe ale educației. Oferă o introducere în subiecte avansate de statistică sau metodologie, cu accent pe înțelegerea inferenței în științele comportamentale și sociale.  Cursul are ca scop consolidarea și dezvoltarea conceptuală cu privire la metodologia cercetării, abordând printre altele, procese ce pot fi uneori destul de complexe precum testarea ipotezelor sau cum lucrul cu modelele statistice.  
 
 O alta parte, la fel de importantă este familiarizarea cu evoluții recente în cercetarea științifică din domeniul psihologiei. De fapt, în mare parte, acest curs este structurat si centrat pe paradigma probabilității Bayesiane. Vom parcurge împreună diferențele majore între abordarea Fischeriană și cea clasică, ce este incertitudinea și vom aplica modele complete Bayesiene.  
 
@@ -63,15 +61,6 @@ Analiza Bayesiană a datelor, Partea II
 
 + [R for Data Science](https://r4ds.had.co.nz) O introducere în manipularea si vizualizarea datelor în R.   
 + [Data visualization: A practical introduction](http://socviz.co) O introducere în vizualizare, bineînțeles în R.  
-
-
-[]()
-[]()
-[]()
-[]()
-[]()
-[]()
-[]()
 
 
 <li><a href="https://michael-franke.github.io/intro-data-analysis/index.html">An Introduction to Data Analysis</a>: Introduction to data analysis in R including plotting, data wrangling, and Bayesian data analysis.</li>
