@@ -48,11 +48,9 @@ Pentru laboratoare și pentru o mare parte din exemplele din clasă, vom folosi 
 
 Nu știți nimic despre R sau vă e frică de el? [Nu-i bai!](https://youtu.be/0DF4Cb-NeyM?t=1583). Până termin de înregistrat cursul nou, aveți la dispozitie o serie de workshop-uri sau tutoriale, ca de exemplu [excelentul workshop](https://www.youtube.com/playlist?list=PLzH57eq4okPYPdHc-eJV7FnAWw_iHHvNk) a lui Cristi Opariuc-Dan. De asemenea, cursul va începe cu o introducere în R, dar ea nu va fi atât de cuprinzătoare ca un curs specializat.
 
-# Conținut
+__Conținut:__
 
-## Idei:
-
-### Introducere în mediul de lucru pe acest semestru.
+__Introducere în mediul de lucru pe acest semestru__
 
 + Explorarea ecosistemului R  
 Introducere în R si RStudio (instalare); Primul contact
