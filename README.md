@@ -58,27 +58,17 @@ Nu știți nimic despre R sau vă e frică de el? [Nu-i bai!](https://youtu.be/0
 + Introducere în R si RStudio (instalare)  
 + Primul contact
 
-2.	Manipularea de date în R
-+	Citirea datelor
-+	Elemente de bază
-+	Elemente avansate de manipulare 
-+	Un studiu de caz 
+2.	Manipularea de date în R  
+Citirea datelor; Elemente de bază; Elemente avansate de manipulare; Un studiu de caz 
 
-3.	Vizualizare
-+	Ggplot2 pentru vizualizare; introducere in gramatica graficelor
-+	Folosirea avansată a ggplot2, aplicare pe un set de date real
+3.	Vizualizare  
+Ggplot2 pentru vizualizare; Introducere in gramatica graficelor; Folosirea avansată a ggplot2, aplicare pe un set de date real
 
-4.	Modelare
-+	Elemente de statistica descriptiva (medii, distribuții, abateri standard)
-+	Elemente de baza (testul t, ANOVA)
-+	Corelația
-+	Cazul regresiei lineare simple si multiple
+4.	Modelare  
+Elemente de statistica descriptiva (medii, distribuții, abateri standard); Elemente de baza (testul t, ANOVA); Corelația; Cazul regresiei lineare simple si multiple.
 
-5.	Comunicarea rezultatelor
-+	RMarkdown
-+	Formatarea în RMarkdown, folosirea codului R în RMarkdown
-+	Cum creăm tabele estetice sau științifice în RMarkdown
-+	Pachetul papaja: generarea de documente dinamice în R
+5.	Comunicarea rezultatelor  
+RMarkdown; Formatarea în RMarkdown, folosirea codului R în RMarkdown; Cum creăm tabele estetice sau științifice în RMarkdown; Pachetul papaja: generarea de documente dinamice în R
 
 
 Analiza Bayesiană a datelor, partea I
