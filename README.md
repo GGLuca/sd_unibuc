@@ -50,6 +50,72 @@ Nu știți nimic despre R sau vă e frică de el? [Nu-i bai!](https://youtu.be/0
 
 # Conținut
 
+## Idei:
+
+### Introducere
+
+1.	Explorarea ecosistemului R
++ Introducere în R si RStudio (instalare)  
++ Primul contact
+
+2.	Manipularea de date în R
++	Citirea datelor
++	Elemente de bază
++	Elemente avansate de manipulare 
++	Un studiu de caz 
+
+3.	Vizualizare
++	Ggplot2 pentru vizualizare; introducere in gramatica graficelor
++	Folosirea avansată a ggplot2, aplicare pe un set de date real
+
+4.	Modelare
++	Elemente de statistica descriptiva (medii, distribuții, abateri standard)
++	Elemente de baza (testul t, ANOVA)
++	Corelația
++	Cazul regresiei lineare simple si multiple
+
+5.	Comunicarea rezultatelor
++	RMarkdown
++	Formatarea în RMarkdown, folosirea codului R în RMarkdown
++	Cum creăm tabele estetice sau științifice în RMarkdown
++	Pachetul papaja: generarea de documente dinamice în R
+
+
+Analiza Bayesiană a datelor, partea I
+
+Comparație între analiza frecventistă și analiza bayesiană a datelor.  
+Obiecții la testarea frecventistă a ipotezei nule.  
+Avantajele analizei bayesiene a datelor.  
+Modele bayesiene de cunoaștere.  
+Un exemplu simplu de aruncare a unei monede.  
+Distribuția posterioară, anterioară, *likelyhood*, mărimea eșantionului.  
+Analiza Bayesiană a datelor, partea II
+Exemplu simplu de inferență bayesiană.
+Regula lui Bayes în acțiune.
+Funcții de verosimilitate comune.
+Funcții prior comune.
+Cum se face inferența.
+    Efectuarea analizei bayesiene a datelor.
+        O regresie liniară simplă.
+        Verificări predictive posterioare.
+        Interval credibil vs. interval de încredere.
+Conținut:
+
+    Construirea modelelor bayesiene cu brms.
+        Evaluarea modelelor:
+            Vizualizarea și interpretarea rezultatelor.
+            Testarea ipotezelor.
+        Evaluarea inferenței: Au funcționat lucrurile?
+    Câteva exemple interesante:
+        Dovezi pentru rezultatele nule.
+        Tratarea varianței inegale.
+        Modelul beta binomial umflat zero-unu.
+        Regresia logistică ordinală.
+        Regresie cu ponderi strict pozitive.
+
+
+
+
 1. Introducere  
   * Condiții formale
   * Organizarea cursului
