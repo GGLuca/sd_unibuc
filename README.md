@@ -5,11 +5,15 @@
 
 __Obiective__:  
 
-Acest curs este destinat studenților înscriși la ,[Școala Doctorală pentru domeniile psihologie și științe ale educației](http://doctorat.unibuc.ro/psihologie/prezentarea-scolii/). Oferă o introducere în subiecte avansate de statistică sau metodologie, cu accent pe înțelegerea inferenței în științele comportamentale și sociale.  Cursul are ca scop consolidarea și dezvoltarea conceptuală cu privire la metodologia cercetării, abordând printre altele, procese ce pot fi uneori destul de complexe precum testarea ipotezelor sau cum lucrul cu modelele statistice.  
+Acest curs este destinat studenților înscriși la [Școala Doctorală pentru domeniile psihologie și științe ale educației](http://doctorat.unibuc.ro/psihologie/prezentarea-scolii/). Dintr-o perspectivă absolut generală, oferă o introducere în subiecte avansate de statistică sau metodologie, cu accent pe înțelegerea inferenței în științele comportamentale și sociale. Cursul are ca scop consolidarea și dezvoltarea conceptuală cu privire la metodologia cercetării, abordând printre altele, procese ce pot fi uneori destul de complexe precum testarea ipotezelor sau cum lucrul cu modelele statistice.  
 
-O alta parte, la fel de importantă este familiarizarea cu evoluții recente în cercetarea științifică din domeniul psihologiei. De fapt, în mare parte, acest curs este structurat si centrat pe paradigma probabilității Bayesiane. Vom parcurge împreună diferențele majore între abordarea Fischeriană și cea clasică, ce este incertitudinea și vom aplica modele complete Bayesiene.  
+În mod mai special, aș dori ca voi (studenții, evident) să vă familiarizați  cu evoluții recente în cercetarea științifică din domeniul psihologiei. De aceea, în mare parte, acest curs este structurat si centrat pe paradigma probabilității Bayesiane. Vom parcurge împreună diferențele majore între abordarea Fischeriană și cea clasică, ce este incertitudinea și vom aplica modele complete Bayesiene.  
 
-Acesta este un curs practic în care învățarea conceptelor și construirea de modele în R merg mână în mână. De aceea una din cerințe importante este să aveți un laptop cu R deja instalat (vezi capitolul *software necesar* de mai jos.). În timp, vom învăța cum să vizualizăm, să gestionăm și să simulăm date în R; vom lucra cu platforme de date și partajare de cod (*oh the joy* :)
+Acesta este un curs nou pentru mine și nu sunt sigur ce voi aborda. Dar, cu siguranță, voi preda elementele de bază: Probabilitatea subiectivă, distribuții apriori, distribuții posterioare, infernța Bayesiană, factori Bayes etc. Voi preda, de asemenea, tehnici de calcul bayesian, inclusiv MCMC. Vom învața împreună corelațiile sau regresiile simple și multiple Bayesiene, interpretarea rezultatelor și cu puțină rabdare și cum se raportează în scris.
+
+Acest curs este practic, și de fapt aveți 14 ore de seminar, în care învățarea conceptelor și construirea de modele în R merg mână în mână. De aceea una din cerințe importante este să aveți un laptop cu R deja instalat (vezi capitolul *software necesar* de mai jos.). Cu timpul, vom învăța cum să vizualizăm, să gestionăm și să simulăm date în R; vom lucra cu platforme de date și partajare de cod. Insist să invățați R. Daca doriți să faceți cercetare fundamentală nu veți putea trece de el. Așa ca puneți-vă centurile de siguranță.
+
+Ca un ultim cuvânt, în mod normal, ar trebui să fiți deja familiarizați cu ceea ce înseamnă statisticile elementare în paradigma frecventistă, dar voi aborda subiectele ca și cum ați uitat o bună parte din ele. ;)
 
 __Detalii curs__:  
 Ore curs: 14  
@@ -46,9 +50,9 @@ Pentru laboratoare și pentru o mare parte din exemplele din clasă, vom folosi 
 
 2. Instalați RStudio de la https://www.rstudio.com/products/rstudio/download/. Alegeți "RStudio Desktop" gratuit (până la capăt, în stânga). Puteți rula R și fără RStudio, dar vă recomand cu căldură să folosiți RStudio (pentru că!).
 
-Nu știți nimic despre R sau vă e frică de el? [Nu-i bai!](https://youtu.be/0DF4Cb-NeyM?t=1583). Până termin de înregistrat cursul nou, aveți la dispozitie o serie de workshop-uri sau tutoriale, ca de exemplu [excelentul workshop](https://www.youtube.com/playlist?list=PLzH57eq4okPYPdHc-eJV7FnAWw_iHHvNk) a lui Cristi Opariuc-Dan. De asemenea, cursul va începe cu o introducere în R, dar ea nu va fi atât de cuprinzătoare ca un curs specializat.
+Nu știți nimic despre R sau vă e frică de el? [Nu-i bai](https://youtu.be/0DF4Cb-NeyM?t=1583)!. Până termin de înregistrat cursul nou, aveți la dispozitie o serie de workshop-uri sau tutoriale, ca de exemplu [excelentul workshop](https://www.youtube.com/playlist?list=PLzH57eq4okPYPdHc-eJV7FnAWw_iHHvNk) a lui Cristi Opariuc-Dan. De asemenea, cursul va începe cu o introducere în R, dar ea nu va fi atât de cuprinzătoare ca un curs specializat. 
 
-__Conținut:__
+## Conținut Curs
 
 __Introducere în mediul de lucru pe acest semestru__
 
@@ -67,15 +71,21 @@ Elemente de statistica descriptiva (medii, distribuții, abateri standard); Elem
 + Comunicarea rezultatelor  
 RMarkdown; Formatarea în RMarkdown, folosirea codului R în RMarkdown; Cum creăm tabele estetice sau științifice în RMarkdown; Pachetul papaja: generarea de documente dinamice în R
 
+__Analiza Bayesiană a datelor, partea I__:
 
-Analiza Bayesiană a datelor, partea I
++ Ce este statistica, la ce o folosim? Incertitudinea, probabilitatea, *likelyhood*.
 
-Comparație între analiza frecventistă și analiza bayesiană a datelor.  
-Obiecții la testarea frecventistă a ipotezei nule.  
-Avantajele analizei bayesiene a datelor.  
-Modele bayesiene de cunoaștere.  
-Un exemplu simplu de aruncare a unei monede.  
-Distribuția posterioară, anterioară, *likelyhood*, mărimea eșantionului.  
++ Comparație între analiza frecventistă și analiza bayesiană a datelor.  
+
++ Obiecții la testarea frecventistă a ipotezei nule. Problema valorilor **p**.
+
++ Avantajele analizei bayesiene a datelor. Modele bayesiene de cunoaștere. 
+
++ Distribuția posterioară, anterioară, *likelyhood*.
+
+__Analiza Bayesiană a datelor, partea II__:
+
+
 Analiza Bayesiană a datelor, partea II
 Exemplu simplu de inferență bayesiană.
 Regula lui Bayes în acțiune.
@@ -87,6 +97,7 @@ Cum se face inferența.
         Verificări predictive posterioare.
         Interval credibil vs. interval de încredere.
 Conținut:
+
 
     Construirea modelelor bayesiene cu brms.
         Evaluarea modelelor:
@@ -101,15 +112,7 @@ Conținut:
         Regresie cu ponderi strict pozitive.
 
 
-
-
-1. Introducere  
-  * Condiții formale
-  * Organizarea cursului
-  * 
-Analiza Bayesiană a datelor, Partea I  
-Analiza Bayesiană a datelor, Partea II  
-Analiza Bayesiană a datelor, Partea II  
+# Modele Adititve Genera
 
 # Resurse gratuite
 
