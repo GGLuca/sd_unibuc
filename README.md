@@ -85,12 +85,10 @@ __Analiza Bayesiană a datelor, partea I__:
 
 __Analiza Bayesiană a datelor, partea II__:
 
++ Exemplu simplu de inferență bayesiană; Regula lui Bayes în acțiune.  
 
-Analiza Bayesiană a datelor, partea II
-Exemplu simplu de inferență bayesiană.
-Regula lui Bayes în acțiune.
-Funcții de verosimilitate comune.
-Funcții prior comune.
++ Funcții de verosimilitate, i.e., likelyhood comune; Funcții prior comune.  
+
 Cum se face inferența.
     Efectuarea analizei bayesiene a datelor.
         O regresie liniară simplă.
@@ -112,7 +110,13 @@ Conținut:
         Regresie cu ponderi strict pozitive.
 
 
-# Modele Adititve Genera
+__Modele aditive generalizate__:
+
++ Introducere; Problema funcțiilor polinomiale,  
+
++ Vizualizarea și interpretarea GAM  
+
+Veți învăța cum să realizați diagrame care să arate modul în care diferite variabile conlucrează . Apoi, veți diagnostica problemele din modele care apar din cauza nepotrivirii datelor sau a relațiilor ascunse între variabile și veți învăța cum să remediați iterativ aceste probleme.
 
 # Resurse gratuite
 
@@ -120,7 +124,7 @@ Conținut:
 
 + [R for Data Science](https://r4ds.had.co.nz) O introducere în manipularea si vizualizarea datelor în R.   
 + [Data visualization: A practical introduction](http://socviz.co) O introducere în vizualizare, bineînțeles în R.  
-
++   
 
 <li><a href="https://michael-franke.github.io/intro-data-analysis/index.html">An Introduction to Data Analysis</a>: Introduction to data analysis in R including plotting, data wrangling, and Bayesian data analysis.</li>
 <li><a href="https://statlearning.com/">An introduction to statistical learning</a>: Introduction to statistical learning including regression, classification, resampling, and unsupervised learning techniques.</li>
