@@ -25,9 +25,10 @@ __Instructor__:
 :expressionless: George Gunnesch-Luca  
 [Pagină web](https://www.psychologie.rw.fau.de/team/wissenschaftliche-mitarbeiterinnen/george-luca/)  
 Email: g.luca[at]drd.unibuc.ro  
+Birou: Dacă știți unde e, să-mi spuneți și mie :)
 
 __Pagina cursului__:    
-www: https://github.com/GGLuca/sd_unibuc  
+www: https://github.com/GGLuca/sd_unibuc  (provizoriu; s-ar putea să primească propria adresa).
 Slack: https://sdfpse.slack.com  
 
 __Orele și locația cursului__:  
@@ -39,9 +40,7 @@ Obligatoriu:
 Opțional: 
 
 __Cunoștințe anterioare__:  
-Cursul necesită o ințelegere a fundamentelor analizei statistice și metodologiei cercetării. 
-
-Dacă 
+Cursul necesită o ințelegere a fundamentelor analizei statistice și metodologiei cercetării.
 
 __Software necesar__:  
 Pentru laboratoare și pentru o mare parte din exemplele din clasă, vom folosi R, un limbaj de programare statistică open-source (și gratuit). Mai jos, veți găsi instrucțiuni extrem de sumare pentru a instala R și RStudio pe calculatorul personal (recomandarea mea).  
@@ -52,62 +51,55 @@ Pentru laboratoare și pentru o mare parte din exemplele din clasă, vom folosi 
 
 Nu știți nimic despre R sau vă e frică de el? [Nu-i bai](https://youtu.be/0DF4Cb-NeyM?t=1583)!. Până termin de înregistrat cursul nou, aveți la dispozitie o serie de workshop-uri sau tutoriale, ca de exemplu [excelentul workshop](https://www.youtube.com/playlist?list=PLzH57eq4okPYPdHc-eJV7FnAWw_iHHvNk) a lui Cristi Opariuc-Dan. De asemenea, cursul va începe cu o introducere în R, dar ea nu va fi atât de cuprinzătoare ca un curs specializat. 
 
-## Conținut Curs
+## Conținut Curs 
+__Provizoriu__
 
 __Introducere în mediul de lucru pe acest semestru__
 
-+ Explorarea ecosistemului R  
-Introducere în R si RStudio (instalare); Primul contact
++ Explorarea ecosistemului R: Introducere în R si RStudio (instalare); Primul contact
 
-+ Manipularea de date în R  
-Citirea datelor; Elemente de bază; Elemente avansate de manipulare; Un studiu de caz 
++ Manipularea de date în R: Citirea datelor; Elemente de bază; Elemente avansate de manipulare; Un studiu de caz 
 
-+ Vizualizare  
-Ggplot2 pentru vizualizare; Introducere in gramatica graficelor; Folosirea avansată a ggplot2, aplicare pe un set de date real
++ Vizualizare: Ggplot2 pentru vizualizare; Introducere in gramatica graficelor; Folosirea avansată a ggplot2, aplicare pe un set de date real
 
-+ Modelare  
-Elemente de statistica descriptiva (medii, distribuții, abateri standard); Elemente de baza (testul t, ANOVA); Corelația; Cazul regresiei lineare simple si multiple.
++ Modelare: Elemente de statistica descriptiva (medii, distribuții, abateri standard); Elemente de baza (testul t, ANOVA); Corelația; Cazul regresiei lineare simple si multiple.
 
-+ Comunicarea rezultatelor  
-RMarkdown; Formatarea în RMarkdown, folosirea codului R în RMarkdown; Cum creăm tabele estetice sau științifice în RMarkdown; Pachetul papaja: generarea de documente dinamice în R
++ Comunicarea rezultatelor: RMarkdown; Formatarea în RMarkdown, folosirea codului R în RMarkdown; Cum creăm tabele estetice sau științifice în RMarkdown; Pachetul papaja: generarea de documente dinamice în R
 
 __Analiza Bayesiană a datelor, partea I__:
 
 + Ce este statistica, la ce o folosim? Incertitudinea, probabilitatea, *likelyhood*.
 
-+ Comparație între analiza frecventistă și analiza bayesiană a datelor.  
-
-+ Obiecții la testarea frecventistă a ipotezei nule. Problema valorilor **p**.
++ Comparație între analiza frecventistă și analiza bayesiană a datelor. Obiecții la testarea frecventistă a ipotezei nule, de exemplu problema valorilor **p**. 
 
 + Avantajele analizei bayesiene a datelor. Modele bayesiene de cunoaștere. 
 
-+ Distribuția posterioară, anterioară, *likelyhood*.
-
 __Analiza Bayesiană a datelor, partea II__:
+
++ Distribuția posterioară, anterioară, *likelyhood*. 
 
 + Exemplu simplu de inferență bayesiană; Regula lui Bayes în acțiune.  
 
 + Funcții de verosimilitate, i.e., likelyhood comune; Funcții prior comune.  
+__Analiza Bayesiană a datelor, partea III__:
 
 Cum se face inferența.
     Efectuarea analizei bayesiene a datelor.
         O regresie liniară simplă.
         Verificări predictive posterioare.
         Interval credibil vs. interval de încredere.
-Conținut:
 
-
-    Construirea modelelor bayesiene cu brms.
-        Evaluarea modelelor:
-            Vizualizarea și interpretarea rezultatelor.
-            Testarea ipotezelor.
-        Evaluarea inferenței: Au funcționat lucrurile?
-    Câteva exemple interesante:
-        Dovezi pentru rezultatele nule.
-        Tratarea varianței inegale.
-        Modelul beta binomial umflat zero-unu.
-        Regresia logistică ordinală.
-        Regresie cu ponderi strict pozitive.
+Construirea modelelor bayesiene cu brms.
+Evaluarea modelelor:
+Vizualizarea și interpretarea rezultatelor.
+Testarea ipotezelor.
+Evaluarea inferenței: Au funcționat lucrurile?
+Câteva exemple interesante:
+Dovezi pentru rezultatele nule.
+Tratarea varianței inegale.
+Modelul beta binomial umflat zero-unu.
+Regresia logistică ordinală.
+Regresie cu ponderi strict pozitive.
 
 
 __Modele aditive generalizate__:
