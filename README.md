@@ -28,7 +28,7 @@ Email: g.luca[at]drd.unibuc.ro
 Birou: Dacă știți unde e, să-mi spuneți și mie :)
 
 __Pagina cursului__:    
-www: https://github.com/GGLuca/sd_unibuc  (provizoriu; s-ar putea să primească propria adresa).
+www: https://github.com/GGLuca/sd_unibuc  (provizoriu; s-ar putea să primească propria adresa).  
 Slack: https://sdfpse.slack.com  
 
 __Orele și locația cursului__:  
