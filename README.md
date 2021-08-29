@@ -1,4 +1,4 @@
-# Metodologii de cercetare cantitativă în psihologie
+# Metodologii de cercetare cantitativă în psihologie 
 
 ### Școala Doctorală Psihologie și Științele Educației / \@UniBuc
 
@@ -8,9 +8,11 @@
 
 Acest curs este destinat studenților înscriși la [Școala Doctorală pentru domeniile psihologie și științe ale educației](http://doctorat.unibuc.ro/psihologie/prezentarea-scolii/). Dintr-o perspectivă absolut generală, oferă o introducere în subiecte avansate de statistică sau metodologie, cu accent pe înțelegerea inferenței în științele comportamentale și sociale. Cursul are ca scop consolidarea și dezvoltarea conceptuală cu privire la metodologia cercetării, abordând printre altele, procese ce pot fi uneori destul de complexe precum testarea ipotezelor sau cum lucrul cu modelele statistice.
 
-În mod mai special, aș dori ca voi (studenții, evident) să vă familiarizați cu evoluții recente în cercetarea științifică din domeniul psihologiei. De aceea, în mare parte, acest curs este structurat si centrat pe paradigma probabilității Bayesiane. Vom parcurge împreună diferențele majore între abordarea Fischeriană și cea clasică, ce este incertitudinea și vom aplica modele complete Bayesiene.
+Dar în mod mai special, aș dori să vă familiarizați cu evoluții recente în cercetarea științifică din domeniul psihologiei. De aceea, în mare parte, acest curs este structurat în așa fel încât să parcurgem împreună diferențele majore între abordarea Fischeriană și cea clasică, ce este incertitudinea și vom aplica modele Bayesiene. Da, va fi un curs de statistică Bayesiană.
 
-Acesta este un curs nou pentru mine și nu sunt sigur ce voi aborda. Dar, cu siguranță, voi preda elementele de bază: Probabilitatea subiectivă, distribuții apriori, distribuții posterioare, infernța Bayesiană, factori Bayes etc. Voi preda, de asemenea, tehnici de calcul bayesian, inclusiv MCMC. Vom învața împreună corelațiile sau regresiile simple și multiple Bayesiene, interpretarea rezultatelor și cu puțină rabdare și cum se raportează în scris.
+Acesta este un curs nou pentru mine și nu sunt sigur ce voi aborda. Dar, cu siguranță voi preda elementele de bază: Probabilitatea subiectivă, distribuții apriori, distribuții posterioare, inferența Bayesiană, factori Bayes etc. Voi preda, de asemenea, tehnici de calcul bayesian, inclusiv MCMC. Vom învața împreună corelațiile sau regresiile simple și multiple Bayesiene, interpretarea rezultatelor și cu puțină rabdare și cum se raportează în scris.
+
+Vom învăța mult despre modele, și mai precis să le priviți mult mai sceptici, cu multă incertitudine, dar în același timp să va simțiți confortabili cu această nesiguranță.
 
 Acest curs este practic, și de fapt aveți 14 ore de seminar, în care învățarea conceptelor și construirea de modele în R merg mână în mână. De aceea una din cerințe importante este să aveți un laptop cu R deja instalat (vezi capitolul *software necesar* de mai jos.). Cu timpul, vom învăța cum să vizualizăm, să gestionăm și să simulăm date în R; vom lucra cu platforme de date și partajare de cod. Insist să invățați R. Daca doriți să faceți cercetare fundamentală nu veți putea trece de el. Așa ca puneți-vă centurile de siguranță.
 
@@ -22,26 +24,22 @@ Ore seminar: 14
 ECTS: 8  
 Finalizare: Colocviu (Dată nespecificată încă)
 
-**Instructor**:  
-:expressionless: George Gunnesch-Luca  
-[Pagină web](https://www.psychologie.rw.fau.de/team/wissenschaftliche-mitarbeiterinnen/george-luca/)  
-Email: g.luca[at]drd.unibuc.ro  
-Birou: Dacă știți unde e, să-mi spuneți și mie :)
+**Cine și cum?**
+
+:man_teacher: George Gunnesch-Luca  
+:spider_web: [Pagină web](https://www.psychologie.rw.fau.de/team/wissenschaftliche-mitarbeiterinnen/george-luca/)  
+:email: g.luca[at]drd.unibuc.ro  
+:classical_building: Birou: Dacă știți unde e, să-mi spuneți și mie :)
 
 **Pagina cursului**:  
-www: <https://github.com/GGLuca/sd_unibuc> (provizoriu; s-ar putea să primească propria adresa).  
+<https://github.com/GGLuca/sd_unibuc> (provizoriu; s-ar putea să primească propria adresa).  
 Slack: <https://sdfpse.slack.com>
 
 **Orele și locația cursului**:  
-Se va anunța la timp
-
-**Lectură**:  
-Obligatoriu:
-
-Opțional:
+Se va anunța la timp. Voi face tot posibilul să fie față în față.
 
 **Cunoștințe anterioare**:  
-Cursul necesită o ințelegere a fundamentelor analizei statistice și metodologiei cercetării.
+Cursul necesită o ințelegere a fundamentelor analizei statistice și metodologiei cercetării, dar voi încerca să predau de parcă toți suferiți de amnezie retrogradă. Nu e așa, și sunt convins că știți mai multe dspre regresii decât credeți voi.
 
 **Software necesar**:  
 Pentru laboratoare și pentru o mare parte din exemplele din clasă, vom folosi R, un limbaj de programare statistică open-source (și gratuit). Mai jos, veți găsi instrucțiuni extrem de sumare pentru a instala R și RStudio pe calculatorul personal (recomandarea mea).
