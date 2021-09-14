@@ -1,4 +1,4 @@
-# Metodologii de cercetare cantitativă în psihologie 
+# Metodologii de cercetare cantitativă în psihologie
 
 ### Școala Doctorală Psihologie și Științele Educației / \@UniBuc
 
@@ -6,7 +6,7 @@
 
 **Obiective**:
 
-Acest curs este destinat studenților înscriși la [Școala Doctorală pentru domeniile psihologie și științe ale educației](http://doctorat.unibuc.ro/psihologie/prezentarea-scolii/). Dintr-o perspectivă absolut generală, oferă o introducere în subiecte avansate de statistică sau metodologie, cu accent pe înțelegerea inferenței în științele comportamentale și sociale. Cursul are ca scop consolidarea și dezvoltarea conceptuală cu privire la metodologia cercetării, abordând printre altele, procese ce pot fi uneori destul de complexe precum testarea ipotezelor sau cum lucrul cu modelele statistice.
+Acest curs este destinat studenților înscriși la [Școala Doctorală pentru domeniile psihologie și științe ale educației](http://doctorat.unibuc.ro/psihologie/prezentarea-scolii/). Dintr-o perspectivă absolut generală, el oferă o introducere în subiecte avansate de statistică sau metodologie, cu accent pe înțelegerea inferenței în științele comportamentale și sociale. Cursul are ca scop consolidarea și dezvoltarea conceptuală cu privire la metodologia cercetării, abordând printre altele, procese ce pot fi uneori destul de complexe precum testarea ipotezelor sau cum lucrul cu modelele statistice.
 
 Dar în mod mai special, aș dori să vă familiarizați cu evoluții recente în cercetarea științifică din domeniul psihologiei. De aceea, în mare parte, acest curs este structurat în așa fel încât să parcurgem împreună diferențele majore între abordarea Fischeriană și cea clasică, ce este incertitudinea și vom aplica modele Bayesiene. Da, va fi un curs de statistică Bayesiană.
 
@@ -28,7 +28,7 @@ Finalizare: Colocviu (Dată nespecificată încă)
 
 :man_teacher: George Gunnesch-Luca  
 :spider_web: [Pagină web](https://www.psychologie.rw.fau.de/team/wissenschaftliche-mitarbeiterinnen/george-luca/)  
-:email: g.luca[at]drd.unibuc.ro  
+:envelope: george.luca[at]drd.unibuc.ro  
 :classical_building: Birou: Dacă știți unde e, să-mi spuneți și mie :)
 
 **Pagina cursului**:  
