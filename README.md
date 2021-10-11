@@ -8,9 +8,9 @@
 
 Acest curs este destinat studenților înscriși la [Școala Doctorală pentru domeniile psihologie și științe ale educației](http://doctorat.unibuc.ro/psihologie/prezentarea-scolii/). Dintr-o perspectivă absolut generală, el oferă o introducere în subiecte avansate de statistică sau metodologie, cu accent pe înțelegerea inferenței în științele comportamentale și sociale. Cursul are ca scop consolidarea și dezvoltarea conceptuală cu privire la metodologia cercetării, abordând printre altele, procese ce pot fi uneori destul de complexe precum testarea ipotezelor sau cum lucrul cu modelele statistice.
 
-Dar în mod mai special, aș dori să vă familiarizați cu evoluții recente în cercetarea științifică din domeniul psihologiei. De aceea, în mare parte, acest curs este structurat în așa fel încât să parcurgem împreună diferențele majore între abordarea Fischeriană și cea clasică, ce este incertitudinea și vom aplica modele Bayesiene. Da, va fi un curs de statistică Bayesiană.
+Dar în mod mai special, ca o dorință personală, aș dori să vă familiarizați cu evoluții recente în cercetarea științifică din domeniul psihologiei. De aceea, în mare parte, acest curs este structurat în așa fel încât să parcurgem împreună diferențele majore între abordarea Fischeriană și cea clasică, ce este incertitudinea și vom aplica modele Bayesiene. Da, va fi un curs de statistică Bayesiană. :)
 
-Acesta este un curs nou pentru mine și nu sunt sigur ce voi aborda. Dar, cu siguranță voi preda elementele de bază: Probabilitatea subiectivă, distribuții apriori, distribuții posterioare, inferența Bayesiană, factori Bayes etc. Voi preda, de asemenea, tehnici de calcul bayesian, inclusiv MCMC. Vom învața împreună corelațiile sau regresiile simple și multiple Bayesiene, interpretarea rezultatelor și cu puțină rabdare și cum se raportează în scris.
+Acesta este un curs nou pentru mine și nu sunt sigur ce voi aborda. Dar, cu siguranță voi preda elementele de bază: Probabilitatea subiectivă, distribuții apriori, distribuții posterioare, inferența Bayesiană, factori Bayes etc. Voi preda, de asemenea, tehnici de calcul bayesian, inclusiv MCMC. Vom învața împreună corelațiile sau regresiile simple și multiple Bayesiene, interpretarea rezultatelor și cu puțină rabdare și cum se raportează în scris. Un plan aproximativ l-am listat mai jos.
 
 Vom învăța mult despre modele, și mai precis să le priviți mult mai sceptici, cu multă incertitudine, dar în același timp să va simțiți confortabili cu această nesiguranță.
 
@@ -32,11 +32,11 @@ Finalizare: Colocviu (Dată nespecificată încă)
 :classical_building: Birou: Dacă știți unde e, să-mi spuneți și mie :)
 
 **Pagina cursului**:  
-<https://github.com/GGLuca/sd_unibuc> (provizoriu; s-ar putea să primească propria adresa).  
+<https://github.com/GGLuca/sd_unibuc>  
 Slack: <https://sdfpse.slack.com>
 
 **Orele și locația cursului**:  
-Se va anunța la timp. Voi face tot posibilul să fie față în față.
+Din păcate situația mă forțează să vă predau online. Un lucru absolut de nedorit: este o metodă în care nu cred dar care este acum singura soluție. Îmi pare rău.
 
 **Cunoștințe anterioare**:  
 Cursul necesită o ințelegere a fundamentelor analizei statistice și metodologiei cercetării, dar voi încerca să predau de parcă toți suferiți de amnezie retrogradă. Nu e așa, și sunt convins că știți mai multe dspre regresii decât credeți voi.
@@ -48,13 +48,9 @@ Pentru laboratoare și pentru o mare parte din exemplele din clasă, vom folosi 
 
 2.  Instalați RStudio de la <https://www.rstudio.com/products/rstudio/download/>. Alegeți "RStudio Desktop" gratuit (până la capăt, în stânga). Puteți rula R și fără RStudio, dar vă recomand cu căldură să folosiți RStudio (pentru că!).
 
-## Conținut Curs
+## 22. Octombrie; Interval orar: 09 - 16:00
 
-**Provizoriu**
-
-**Introducere în mediul de lucru pe acest semestru**
-
--   Explorarea ecosistemului R: Introducere în R si RStudio (instalare); Primul contact
+-   Introducere în mediul de lucru pe acest semestru: 1. Explorarea ecosistemului R: Introducere în R si RStudio (instalare); Primul contact
 
 -   Manipularea de date în R: Citirea datelor; Elemente de bază; Elemente avansate de manipulare; Un studiu de caz
 
@@ -63,6 +59,8 @@ Pentru laboratoare și pentru o mare parte din exemplele din clasă, vom folosi 
 -   Modelare: Elemente de statistica descriptiva (medii, distribuții, abateri standard); Elemente de baza (testul t, ANOVA); Corelația; Cazul regresiei lineare simple si multiple.
 
 -   Comunicarea rezultatelor: RMarkdown; Formatarea în RMarkdown, folosirea codului R în RMarkdown; Cum creăm tabele estetice sau științifice în RMarkdown; Pachetul papaja: generarea de documente dinamice în R
+
+## 29. Octombrie; Interval orar: 09 - 16:00
 
 **Analiza Bayesiană a datelor, partea I:**
 
@@ -86,6 +84,8 @@ Elementele de bază
 
 -   Funcții de verosimilitate, i.e., likelyhood comune; Funcții prior comune.
 
+## 13. Noiembrie; Interval orar: 09 - 16:00
+
 **Analiza Bayesiană a datelor, partea III:**
 
 Elemente practice
@@ -96,13 +96,15 @@ Elemente practice
 
 -   Verificări predictive posterioare. Interval credibil vs. interval de încredere.
 
-Construirea modelelor bayesiene cu brms.
+-   Construirea modelelor bayesiene cu brms.
 
-Evaluarea modelelor: Vizualizarea și interpretarea rezultatelor.
+-   Evaluarea modelelor: Vizualizarea și interpretarea rezultatelor.
 
-Testarea ipotezelor.
+Alte elemente (nesigur)
 
 Evaluarea inferenței: Au funcționat lucrurile? Câteva exemple interesante: Dovezi pentru rezultatele nule. Tratarea varianței inegale. Modelul beta binomial umflat zero-unu. Regresia logistică ordinală. Regresie cu ponderi strict pozitive.
+
+## 27. Noiembrie; Interval orar: 09 - 16:00
 
 **Modele aditive generalizate**:
 
