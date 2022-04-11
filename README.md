@@ -4,7 +4,7 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/GGLuca/sd_unibuc?label=last%20update%253A%20&style=flat-square)
 
-**Obiective**:
+**Obiective**: m
 
 Acest curs este destinat studenților înscriși la [Școala Doctorală pentru domeniile psihologie și științe ale educației](http://doctorat.unibuc.ro/psihologie/prezentarea-scolii/). Dintr-o perspectivă absolut generală, el oferă o introducere în subiecte avansate de statistică sau metodologie, cu accent pe înțelegerea inferenței în științele comportamentale și sociale. Cursul are ca scop consolidarea și dezvoltarea conceptuală cu privire la metodologia cercetării, abordând printre altele, procese ce pot fi uneori destul de complexe precum testarea ipotezelor sau cum lucrul cu modelele statistice.
 
