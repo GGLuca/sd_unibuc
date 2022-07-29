@@ -34,7 +34,7 @@ Finalizare: Colocviu (Dată nespecificată încă)
 Slack: <https://sdfpse.slack.com>
 
 **Orele și locația cursului**:\
-Din păcate situația mă forțează să vă predau online. Un lucru absolut de nedorit: este o metodă în care nu cred dar care este acum singura soluție. Îmi pare rău.
+Vor fi comunicate din timp
 
 **Cunoștințe anterioare**:\
 Cursul necesită o ințelegere a fundamentelor analizei statistice și metodologiei cercetării, dar voi încerca să predau de parcă toți suferiți de amnezie retrogradă. Nu e așa, și sunt convins că știți mai multe dspre regresii decât credeți voi.
@@ -47,6 +47,8 @@ Pentru laboratoare și pentru o mare parte din exemplele din clasă, vom folosi 
 2.  Instalați RStudio de la <https://www.rstudio.com/products/rstudio/download/>. Alegeți "RStudio Desktop" gratuit (până la capăt, în stânga). Puteți rula R și fără RStudio, dar vă recomand cu căldură să folosiți RStudio (pentru că!).
 
 3.  JASP: <https://jasp-stats.org/>
+
+<center>
 
 | Zona               | Subiect                     | S   |
 |--------------------|-----------------------------|-----|
@@ -64,6 +66,8 @@ Pentru laboratoare și pentru o mare parte din exemplele din clasă, vom folosi 
 |                    | GLM                         | --  |
 | Suplimentar        | Comparare de modele         | --  |
 |                    | Selecţia modelului          | --  |
+
+</Center>
 
 ## 22. Octombrie; Interval orar: 09 - 16:00
 
