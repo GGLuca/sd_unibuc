@@ -10,7 +10,7 @@ Acest curs este destinat studenților înscriși la [Școala Doctorală pentru d
 
 Dar în mod mai special, ca o dorință personală, aș dori să vă familiarizați cu evoluții recente în cercetarea științifică din domeniul psihologiei. De aceea, în mare parte, acest curs este structurat în așa fel încât să parcurgem împreună diferențele majore între abordarea Fischeriană și cea clasică, ce este incertitudinea și vom aplica modele Bayesiene. Da, va fi un curs de statistică Bayesiană. :)
 
-Acesta este un curs nou pentru mine și nu sunt sigur ce voi aborda. Dar, cu siguranță voi preda elementele de bază, fundamentele: Probabilitatea subiectivă, distribuții apriori, distribuții posterioare, inferența Bayesiană, factori Bayes etc. De asemenea, vom lucra împreună cu tehnici de calcul bayesian, inclusiv MCMC. Iar pentru că avem probleme reale de rezolvat, vom face preponderent modelare statistică. Regresiile simple și multiple Bayesiene, comparare de modele, și predicții. Vom învăța mult despre modele, și mai precis să le priviți mult mai sceptici, cu multă incertitudine, dar în același timp să va simțiți confortabili cu această nesiguranță Evident, vom interpreta rezultatele și cu puțină rabdare vom vedea și um se raportează în scris. Un plan aproximativ l-am listat mai jos.
+Acesta este un curs relativ nou pentru mine și nu exisă certitudini în ceea ce privește conținutul exact. Dar, cu siguranță voi preda elementele de bază, fundamentele: Probabilitatea subiectivă, distribuții apriori, distribuții posterioare, inferența Bayesiană, factori Bayes etc. De asemenea, vom lucra împreună cu tehnici de calcul bayesian, inclusiv MCMC. Iar pentru că avem probleme reale de rezolvat, vom face preponderent modelare statistică. Regresiile simple și multiple Bayesiene, comparare de modele, și predicții. Vom învăța mult despre modele, și mai precis să le priviți mult mai sceptici, cu multă incertitudine, dar în același timp să va simțiți confortabili cu această nesiguranță Evident, vom interpreta rezultatele și cu puțină rabdare vom vedea și um se raportează în scris. Un plan aproximativ l-am listat mai jos.
 
 Acest curs este practic, și de fapt aveți 14 ore de seminar, în care învățarea conceptelor și construirea de modele în R merg mână în mână. De aceea una din cerințe importante este să aveți un laptop cu R și JASP deja instalat (vezi capitolul *software necesar* de mai jos.). Cu timpul, vom învăța cum să vizualizăm, să gestionăm și să simulăm date în R; vom lucra cu platforme de date și partajare de cod. Insist să invățați R. Daca doriți să faceți cercetare fundamentală nu veți putea trece de el. Așa ca puneți-vă centurile de siguranță.
 
@@ -30,8 +30,7 @@ Finalizare: Colocviu (Dată nespecificată încă)
 :classical_building: Birou: Dacă știți unde e, să-mi spuneți și mie :)
 
 **Pagina cursului**:\
-<https://github.com/GGLuca/sd_unibuc>\
-Slack: <https://sdfpse.slack.com>
+<https://github.com/GGLuca/sd_unibuc>
 
 **Orele și locația cursului**:\
 Vor fi comunicate din timp
@@ -42,100 +41,15 @@ Cursul necesită o ințelegere a fundamentelor analizei statistice și metodolog
 **Software necesar**:\
 Pentru laboratoare și pentru o mare parte din exemplele din clasă, vom folosi R, un limbaj de programare statistică open-source (și gratuit). Mai jos, veți găsi instrucțiuni extrem de sumare pentru a instala R și RStudio pe calculatorul personal (recomandarea mea).
 
-1.  Instalați R de la adresa <https://cran.r-project.org/>. Este disponibil pentru Mac OS, Windows și Linux. Alegeți linkul corespunzător, descărcați și instalați.
+1.  Instalați **R** de la adresa <https://cran.r-project.org/>. Este disponibil pentru Mac OS, Windows și Linux. Alegeți linkul corespunzător, descărcați și instalați.
 
-2.  Instalați RStudio de la <https://www.rstudio.com/products/rstudio/download/>. Alegeți "RStudio Desktop" gratuit (până la capăt, în stânga). Puteți rula R și fără RStudio, dar vă recomand cu căldură să folosiți RStudio (pentru că!).
+2.  Instalați **RStudio** de la <https://www.rstudio.com/products/rstudio/download/>. Alegeți "RStudio Desktop" gratuit (până la capăt, în stânga). Puteți rula R și fără RStudio, dar vă recomand cu căldură să folosiți RStudio (pentru că!).
+
+*Suplimentar*:
 
 3.  JASP: <https://jasp-stats.org/>
 
-<center>
-
-| Zona               | Subiect                     | S   |
-|--------------------|-----------------------------|-----|
-| Introducere        | R, RStudio, Mediul de lucru | 1   |
-| Fundaţia           |                             |     |
-| Inferenţă          | Beta-binomial               | 2   |
-|                    | Normal-normal               | 3   |
-|                    | Conjugare                   | 2,3 |
-|                    | Predicţie, verificarea ei   | 4   |
-| Calcul Bayesian    | MCMC                        | 5   |
-|                    | Diagnostic MCMC             | 5   |
-| Modelare Bayesiană | Regresie liniară            | 6   |
-|                    | Modele multinivel           | 7   |
-|                    | Regresie logistică          | 8   |
-|                    | GLM                         | --  |
-| Suplimentar        | Comparare de modele         | --  |
-|                    | Selecţia modelului          | --  |
-
-</Center>
-
-## 22. Octombrie; Interval orar: 09 - 16:00
-
--   Introducere în mediul de lucru pe acest semestru: 1. Explorarea ecosistemului R: Introducere în R si RStudio (instalare); Primul contact
-
--   Manipularea de date în R: Citirea datelor; Elemente de bază; Elemente avansate de manipulare; Un studiu de caz
-
--   Vizualizare: Ggplot2 pentru vizualizare; Introducere in gramatica graficelor; Folosirea avansată a ggplot2, aplicare pe un set de date real
-
--   Modelare: Elemente de statistica descriptiva (medii, distribuții, abateri standard); Elemente de baza (testul t, ANOVA); Corelația; Cazul regresiei lineare simple si multiple.
-
--   Comunicarea rezultatelor: RMarkdown; Formatarea în RMarkdown, folosirea codului R în RMarkdown; Cum creăm tabele estetice sau științifice în RMarkdown; Pachetul papaja: generarea de documente dinamice în R
-
-## 29. Octombrie; Interval orar: 09 - 16:00
-
-**Analiza Bayesiană a datelor, partea I:**
-
-Introducerea
-
--   Ce este statistica, la ce o folosim? Incertitudinea, probabilitatea, *likelyhood*.
-
--   Comparație între analiza frecventistă și analiza bayesiană a datelor.
-
--   Testarea frecventistă a ipotezei nule
-
--   Avantajele analizei bayesiene a datelor. Modele bayesiene de cunoaștere.
-
-**Analiza Bayesiană a datelor, partea II:**
-
-Elementele de bază
-
--   Distribuția posterioară, anterioară, *likelyhood*.
-
--   Exemplu simplu de inferență bayesiană; Regula lui Bayes în acțiune.
-
--   Funcții de verosimilitate, i.e., likelyhood comune; Funcții prior comune.
-
-## 13. Noiembrie; Interval orar: 09 - 16:00
-
-**Analiza Bayesiană a datelor, partea III:**
-
-Elemente practice
-
--   Cum se face inferența. Efectuarea analizei bayesiene a datelor.
-
--   O regresie liniară simplă.
-
--   Verificări predictive posterioare. Interval credibil vs. interval de încredere.
-
--   Construirea modelelor bayesiene cu brms.
-
--   Evaluarea modelelor: Vizualizarea și interpretarea rezultatelor.
-
-Alte elemente (nesigur)
-
-Evaluarea inferenței: Au funcționat lucrurile? Câteva exemple interesante: Dovezi pentru rezultatele nule. Tratarea varianței inegale. Modelul beta binomial umflat zero-unu. Regresia logistică ordinală. Regresie cu ponderi strict pozitive.
-
-## 27. Noiembrie; Interval orar: 09 - 16:00
-
-**Modele aditive generalizate**:
-
--   Introducere; Problema funcțiilor polinomiale,
-
--   Vizualizarea și interpretarea GAM
-
-Veți învăța cum să realizați diagrame care să arate modul în care diferite variabile conlucrează . Apoi, veți diagnostica problemele din modele care apar din cauza nepotrivirii datelor sau a relațiilor ascunse între variabile și veți învăța cum să remediați iterativ aceste probleme.
-
-# Resurse gratuite
+## Resurse gratuite
 
 ## Pentru R
 
