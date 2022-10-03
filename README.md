@@ -36,9 +36,7 @@ Finalizare: Colocviu (Dată nespecificată încă)
 
 | Data            | Ora           | General                       | Subiect                         | Slideuri |
 |:--------------|:--------------|:--------------|:--------------|:--------------|
-| 7.10            | 09:00 - 14:00 | Introducere, mediu de lucru   | R/RStudio 1                     |          
-                                                                                                               
-                                                                                                                                                                                                                    🐣        |
+| 7.10            | 09:00 - 14:00 | Introducere, mediu de lucru   | R/RStudio 1                     | 🐣       |
 | 8.10            | 09:00 - 14:00 |                               | R/Rstudio 2                     | 🐥       |
 | 28.10           | 09:00 - 11:00 | Fundaţia inferenţei Bayesiene | Teorema lui Bayes               | 🐤       |
 | 29.10           | 09:00 - 11:00 |                               | Beta-Binomial                   | 🐔       |
