@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Introducere în R/RStudio</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#r-câteva-cuvinte-introductive" id="toc-r-câteva-cuvinte-introductive" class="nav-link active" data-scroll-target="#r-câteva-cuvinte-introductive">R, câteva cuvinte introductive:</a>
+  <ul class="collapse">
+  <li><a href="#câteva-cifre---căutare-scopus-13.09.2022" id="toc-câteva-cifre---căutare-scopus-13.09.2022" class="nav-link" data-scroll-target="#câteva-cifre---căutare-scopus-13.09.2022">Câteva cifre - Căutare Scopus (13.09.2022)</a></li>
+  <li><a href="#de-ce-această-adopție-în-masă" id="toc-de-ce-această-adopție-în-masă" class="nav-link" data-scroll-target="#de-ce-această-adopție-în-masă">De ce această adopție în masă?</a></li>
+  <li><a href="#este-r-ușor-de-învățat" id="toc-este-r-ușor-de-învățat" class="nav-link" data-scroll-target="#este-r-ușor-de-învățat">Este R ușor (de învățat)?</a></li>
+  <li><a href="#cum-vom-lucra-adică-încă-nu-am-instalat-nimic-pe-laptop" id="toc-cum-vom-lucra-adică-încă-nu-am-instalat-nimic-pe-laptop" class="nav-link" data-scroll-target="#cum-vom-lucra-adică-încă-nu-am-instalat-nimic-pe-laptop">Cum vom lucra? Adică: Încă nu am instalat nimic pe laptop!</a></li>
+  <li><a href="#descărcarea-r" id="toc-descărcarea-r" class="nav-link" data-scroll-target="#descărcarea-r">Descărcarea R</a></li>
+  <li><a href="#instalarea-r" id="toc-instalarea-r" class="nav-link" data-scroll-target="#instalarea-r">Instalarea R</a></li>
+  <li><a href="#descărcarea-rstudio" id="toc-descărcarea-rstudio" class="nav-link" data-scroll-target="#descărcarea-rstudio">Descărcarea RStudio</a></li>
+  <li><a href="#instalarea-rstudio" id="toc-instalarea-rstudio" class="nav-link" data-scroll-target="#instalarea-rstudio">Instalarea RStudio</a></li>
+  <li><a href="#r-şi-rstudio" id="toc-r-şi-rstudio" class="nav-link" data-scroll-target="#r-şi-rstudio">R şi RStudio</a></li>
+  <li><a href="#prezentarea-mediului-de-lucru" id="toc-prezentarea-mediului-de-lucru" class="nav-link" data-scroll-target="#prezentarea-mediului-de-lucru">Prezentarea mediului de lucru</a>
+  <ul class="collapse">
+  <li><a href="#panoul-sintaxei" id="toc-panoul-sintaxei" class="nav-link" data-scroll-target="#panoul-sintaxei">Panoul sintaxei</a></li>
+  <li><a href="#consola" id="toc-consola" class="nav-link" data-scroll-target="#consola">Consola</a></li>
+  <li><a href="#panoul-mediului-de-lucru-istorie" id="toc-panoul-mediului-de-lucru-istorie" class="nav-link" data-scroll-target="#panoul-mediului-de-lucru-istorie">Panoul mediului de lucru, istorie</a></li>
+  <li><a href="#fișiere-grafice-pachete" id="toc-fișiere-grafice-pachete" class="nav-link" data-scroll-target="#fișiere-grafice-pachete">Fișiere, grafice, pachete</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#cum-folosim-r" id="toc-cum-folosim-r" class="nav-link" data-scroll-target="#cum-folosim-r">Cum folosim R?</a></li>
+  <li><a href="#pentru-orele-următoare" id="toc-pentru-orele-următoare" class="nav-link" data-scroll-target="#pentru-orele-următoare">Pentru orele următoare:</a></li>
+  <li><a href="#ceva-mai-departe-obiecte-funcții-pachete" id="toc-ceva-mai-departe-obiecte-funcții-pachete" class="nav-link" data-scroll-target="#ceva-mai-departe-obiecte-funcții-pachete">Ceva mai departe: obiecte, funcții, pachete</a>
+  <ul class="collapse">
+  <li><a href="#totul-dar-absolut-totul-în-r-este-un-obiect." id="toc-totul-dar-absolut-totul-în-r-este-un-obiect." class="nav-link" data-scroll-target="#totul-dar-absolut-totul-în-r-este-un-obiect.">Totul, dar absolut totul în R este un <strong>obiect</strong>.</a></li>
+  <li><a href="#tipuri-de-obiecte" id="toc-tipuri-de-obiecte" class="nav-link" data-scroll-target="#tipuri-de-obiecte">Tipuri de obiecte</a>
+  <ul class="collapse">
+  <li><a href="#numerice" id="toc-numerice" class="nav-link" data-scroll-target="#numerice">Numerice</a></li>
+  <li><a href="#caractere-strings" id="toc-caractere-strings" class="nav-link" data-scroll-target="#caractere-strings">Caractere (“<em>strings</em>”):</a></li>
+  <li><a href="#logice" id="toc-logice" class="nav-link" data-scroll-target="#logice">Logice</a></li>
+  <li><a href="#factori" id="toc-factori" class="nav-link" data-scroll-target="#factori">Factori</a></li>
+  </ul></li>
+  <li><a href="#tipuri-de-date" id="toc-tipuri-de-date" class="nav-link" data-scroll-target="#tipuri-de-date">Tipuri de date</a>
+  <ul class="collapse">
+  <li><a href="#vectori-colecție-de-valori-ce-aparțin-aceluiași-tip-de-date-numere-caractere-şamd." id="toc-vectori-colecție-de-valori-ce-aparțin-aceluiași-tip-de-date-numere-caractere-şamd." class="nav-link" data-scroll-target="#vectori-colecție-de-valori-ce-aparțin-aceluiași-tip-de-date-numere-caractere-şamd.">Vectori: colecție de valori ce aparțin aceluiași tip de date: numere, caractere, şamd.</a></li>
+  <li><a href="#matrice" id="toc-matrice" class="nav-link" data-scroll-target="#matrice">Matrice</a></li>
+  <li><a href="#rezultatele-unor-analize-statistice" id="toc-rezultatele-unor-analize-statistice" class="nav-link" data-scroll-target="#rezultatele-unor-analize-statistice">Rezultatele unor analize statistice</a></li>
+  <li><a href="#secvența-de-date-data-frame" id="toc-secvența-de-date-data-frame" class="nav-link" data-scroll-target="#secvența-de-date-data-frame">Secvența de date** (<code>data frame</code>)</a></li>
+  </ul></li>
+  <li><a href="#folosirea-obiectelor" id="toc-folosirea-obiectelor" class="nav-link" data-scroll-target="#folosirea-obiectelor">Folosirea obiectelor</a></li>
+  <li><a href="#atenţie" id="toc-atenţie" class="nav-link" data-scroll-target="#atenţie">Atenţie</a></li>
+  </ul></li>
+  <li><a href="#funcţii" id="toc-funcţii" class="nav-link" data-scroll-target="#funcţii">Funcţii</a>
+  <ul class="collapse">
+  <li><a href="#anatomia-unei-funcții" id="toc-anatomia-unei-funcții" class="nav-link" data-scroll-target="#anatomia-unei-funcții">Anatomia unei funcții</a></li>
+  </ul></li>
+  <li><a href="#pachetele-r" id="toc-pachetele-r" class="nav-link" data-scroll-target="#pachetele-r">Pachetele R</a>
+  <ul class="collapse">
+  <li><a href="#instalarea-și-actualizarea-pachetelor" id="toc-instalarea-și-actualizarea-pachetelor" class="nav-link" data-scroll-target="#instalarea-și-actualizarea-pachetelor">Instalarea și actualizarea pachetelor</a></li>
+  <li><a href="#încărcarea-și-descărcarea-pachetelor" id="toc-încărcarea-și-descărcarea-pachetelor" class="nav-link" data-scroll-target="#încărcarea-și-descărcarea-pachetelor">Încărcarea și descărcarea pachetelor</a></li>
+  </ul></li>
+  <li><a href="#ce-subiecte-mai-avem-de-parcurs" id="toc-ce-subiecte-mai-avem-de-parcurs" class="nav-link" data-scroll-target="#ce-subiecte-mai-avem-de-parcurs">Ce subiecte mai avem de parcurs:</a></li>
+  <li><a href="#vizualizarea-datelor-cu-ggplot2" id="toc-vizualizarea-datelor-cu-ggplot2" class="nav-link" data-scroll-target="#vizualizarea-datelor-cu-ggplot2">Vizualizarea datelor cu GGplot2</a>
+  <ul class="collapse">
+  <li><a href="#pachetul-gapminder" id="toc-pachetul-gapminder" class="nav-link" data-scroll-target="#pachetul-gapminder">Pachetul gapminder</a></li>
+  <li><a href="#exemple-folosind-pachetul-de-bază." id="toc-exemple-folosind-pachetul-de-bază." class="nav-link" data-scroll-target="#exemple-folosind-pachetul-de-bază.">Exemple folosind pachetul de bază.</a></li>
+  </ul></li>
+  <li><a href="#grafice-avansate-cu-ggplot2-parte-a-tidyverse" id="toc-grafice-avansate-cu-ggplot2-parte-a-tidyverse" class="nav-link" data-scroll-target="#grafice-avansate-cu-ggplot2-parte-a-tidyverse">Grafice avansate cu ggplot2 (Parte a Tidyverse)</a>
+  <ul class="collapse">
+  <li><a href="#ce-este-tidyverse" id="toc-ce-este-tidyverse" class="nav-link" data-scroll-target="#ce-este-tidyverse">Ce este “Tidyverse”</a></li>
+  <li><a href="#ggplot" id="toc-ggplot" class="nav-link" data-scroll-target="#ggplot">ggplot</a></li>
+  <li><a href="#exemple-de-ggplot" id="toc-exemple-de-ggplot" class="nav-link" data-scroll-target="#exemple-de-ggplot">Exemple de ggplot</a></li>
+  <li><a href="#exemple-de-ggplot-2" id="toc-exemple-de-ggplot-2" class="nav-link" data-scroll-target="#exemple-de-ggplot-2">Exemple de ggplot (2)</a></li>
+  <li><a href="#ideea-din-spatele-ggplot" id="toc-ideea-din-spatele-ggplot" class="nav-link" data-scroll-target="#ideea-din-spatele-ggplot">Ideea din spatele ggplot</a></li>
+  <li><a href="#cum-arată-structura-de-bază" id="toc-cum-arată-structura-de-bază" class="nav-link" data-scroll-target="#cum-arată-structura-de-bază">Cum arată structura de bază:</a>
+  <ul class="collapse">
+  <li><a href="#stratul-cu-date-și-maparea-variabilelor" id="toc-stratul-cu-date-și-maparea-variabilelor" class="nav-link" data-scroll-target="#stratul-cu-date-și-maparea-variabilelor">Stratul cu date și maparea variabilelor</a></li>
+  <li><a href="#stratul-cu-numărul-trei-atributele-geometrice." id="toc-stratul-cu-numărul-trei-atributele-geometrice." class="nav-link" data-scroll-target="#stratul-cu-numărul-trei-atributele-geometrice.">Stratul cu numărul trei: atributele geometrice.</a></li>
+  <li><a href="#maparea-aestetica" id="toc-maparea-aestetica" class="nav-link" data-scroll-target="#maparea-aestetica">Maparea AES(tetica)</a></li>
+  <li><a href="#obiectele-geometrice" id="toc-obiectele-geometrice" class="nav-link" data-scroll-target="#obiectele-geometrice">Obiectele geometrice</a></li>
+  <li><a href="#obiectele-geometrice-ii" id="toc-obiectele-geometrice-ii" class="nav-link" data-scroll-target="#obiectele-geometrice-ii">Obiectele geometrice II</a></li>
+  <li><a href="#faţete" id="toc-faţete" class="nav-link" data-scroll-target="#faţete">Faţete</a></li>
+  <li><a href="#etichete" id="toc-etichete" class="nav-link" data-scroll-target="#etichete">Etichete</a></li>
+  <li><a href="#scale" id="toc-scale" class="nav-link" data-scroll-target="#scale">Scale</a></li>
+  <li><a href="#teme" id="toc-teme" class="nav-link" data-scroll-target="#teme">Teme</a></li>
+  <li><a href="#mici-modificari" id="toc-mici-modificari" class="nav-link" data-scroll-target="#mici-modificari">Mici modificari</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Introducere în R/RStudio</h1>
+<p class="subtitle lead">Școala Doctorală - 2022 (Toamnă)</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="r-câteva-cuvinte-introductive" class="level1">
+<h1>R, câteva cuvinte introductive:</h1>
+<ul>
+<li>R este un <em>limbaj de programare</em> și un <em>mediu de prelucrare și analiză statistică a datelor</em>.</li>
+<li>Este, pur și simplu, cel mai bun instrument existent în prezent pentru această sarcină.</li>
+<li>Devenit între timp standard în știintele sociale.</li>
+<li>Este proiectat de la zero pentru a gestiona date, iar acest lucru se vede. Dar este, de asemenea, suficient de flexibil pentru a fi utilizat pentru a crea pagini web interactive (ca această prezentare), <a href="https://stackoverflow.com/" title="StackOverflow">rapoarte automate</a> și API-uri.</li>
+</ul>
+<section id="câteva-cifre---căutare-scopus-13.09.2022" class="level2">
+<h2 class="anchored" data-anchor-id="câteva-cifre---căutare-scopus-13.09.2022">Câteva cifre - Căutare Scopus (13.09.2022)</h2>
+<p>Scopus acoperă aproape 36.377 de titluri de la aproximativ 11.678 de edituri, dintre care 34.346 sunt reviste <em>peer-review</em>: științele vieții, științele sociale, științele fizice și științele sănătății.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Căutare:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">REF</span>(“the R software” OR “the R project” OR “r<span class="sc">-</span>project.org” OR “R development core”)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">REF</span>(SPSS)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-citari" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-citari-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Numărul de citări pe an pentru fiecare pachet statistic, găsit de Scopus, din 2015 până în 2021.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="de-ce-această-adopție-în-masă" class="level2">
+<h2 class="anchored" data-anchor-id="de-ce-această-adopție-în-masă">De ce această adopție în masă?</h2>
+<ul>
+<li>Este gratuit, versatil, rapid și modern - pur și simplu, cel mai bun instrument existent în prezent pentru analiza datelor.</li>
+<li>Dispune de o comunitate mare și prietenoasă de utilizatori care ajută la răspunsul la întrebări și la dezvoltarea de noi instrumente R (e.g., <a href="https://stackoverflow.com/">Stackoverflow</a>)</li>
+<li>Cu peste 17.000 de pachete suplimentare disponibile, R oferă mai multe funcții pentru analiza datelor decât orice altă alternativă.</li>
+<li>Include instrumente specializate pentru discipline atât de variate precum științele politice, chimia mediului și astronomia, iar noile metode ajung în R cu mult înainte de a ajunge în alte programe.</li>
+<li>R facilitează construirea de analize reproductibile și <em>flowuri</em> de lucru care vă permit să repetați cu ușurință aceeași analiză de mai multe ori.</li>
+</ul>
+</section>
+<section id="este-r-ușor-de-învățat" class="level2">
+<h2 class="anchored" data-anchor-id="este-r-ușor-de-învățat">Este R ușor (de învățat)?</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagini/stgoogle.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Sfântul Google</figcaption><p></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<p><span class="citation" data-cites="lawlor2022">Lawlor et al. (<a href="#ref-lawlor2022" role="doc-biblioref">2022</a>)</span>:</p>
+<ul>
+<li><p>Regula 1: Pregătiți-vă pentru o <a href="https://journals.plos.org/ploscompbiol/article/figure/image?size=large&amp;id=10.1371/journal.pcbi.1010372.g001">curbă de învățare abruptă</a></p></li>
+<li><p>Regula 2: Fă-ți timp să citești o <a href="https://modernstatisticswithr.com/">carte</a>. <span class="citation" data-cites="thulin2021">Thulin (<a href="#ref-thulin2021" role="doc-biblioref">2021</a>)</span>.</p></li>
+<li><p>Regula 3: Folosiți resurse gratuite</p></li>
+<li><p>Regula 4: Dezvoltă-ți abilitățile prin proiecte cu presiune redusă</p></li>
+<li><p>Regula 5: Adoptați bunele practici și fiți consecvenți</p></li>
+<li><p>Regula 7: Cereți ajutor (și ajutați-i pe alții)</p></li>
+<li><p>Regula 9: Citește codul altora și împarte-l pe al tău</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="cum-vom-lucra-adică-încă-nu-am-instalat-nimic-pe-laptop" class="level2">
+<h2 class="anchored" data-anchor-id="cum-vom-lucra-adică-încă-nu-am-instalat-nimic-pe-laptop">Cum vom lucra? Adică: Încă nu am instalat nimic pe laptop!</h2>
+<p><em>Nu-i bai!</em> Pentru început vom lucra cu <a href="rstudio.cloud/">rstudio.cloud</a> o soluţie <em>cloud</em>, dar după ziua de azi, mă aștept ca fiecare din voi să aveți propria versiune locală de R şi RStudio.</p>
+<p>Pentru asta:</p>
+<p>Înainte de a porni la drum avem nevoie de două programe, <strong>R</strong> și <strong>RStudio</strong>. Primul în ordinea importanței ar fi <strong>R</strong>. Pentru a-l descărca, accesați direct pagina ce conține lista de servere de unde este disponibil, la <a href="https://cran.r-project.org/mirrors.html" class="uri">https://cran.r-project.org/mirrors.html</a></p>
+</section>
+<section id="descărcarea-r" class="level2">
+<h2 class="anchored" data-anchor-id="descărcarea-r">Descărcarea R</h2>
+<p>Odată ce ați ajuns pe pagină, puteți alege versiuna potrivită sistemului de operare pe care îl folosiți.</p>
+<ol type="1">
+<li><p>Pentru versiunea <strong>Windows</strong> alegeți linkul <em>Download R for Windows</em>. Următoarea pagină vă oferă diverse opțiuni ale R, dar varianta pe care o doriți este cea <em>base</em> (de bază). A mai rămas doar un pas, și acela ar fi un click pe <em>Download R X.X.X for Windows</em>, unde X.X.X descrie varianta cea mai nouă a R.</p></li>
+<li><p>Dacă utilizați <strong>MacOS</strong>, alegeți <em>Download R for (Mac) OS X</em>, și descărcați fișierul <em>R-X.X.X.pkg</em>, unde din nou, X.X.X definește varianta actuală a R.</p></li>
+</ol>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>De când Apple a lansat propria linie de procesoare ARM (M1 şi viitoarele…) R există acum în două “gusturi”: varianta pentru Mac-urile vechi (pe Intel) şi o variantă R pentru cele noi, de după 2020. Atenţie la pachetul pe care îl descărcaţi.</p>
+</div>
+</div>
+</section>
+<section id="instalarea-r" class="level2">
+<h2 class="anchored" data-anchor-id="instalarea-r">Instalarea R</h2>
+<p>Instalarea R în Windows este destul de directă. Executați fișierul de instalre pe care l-ați descărcat, alegeți limba pachetului de instalare (din păcate încă nu avem opțiunea limbii Române), confirmați licența, alegeți adresa locală unde va fi instalat R, și cam atât. Atâta doar că puteți renunța la varianta de 32 de biți dacă aveți un sistem de operare Windows 7 sau mai recent.</p>
+</section>
+<section id="descărcarea-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="descărcarea-rstudio">Descărcarea RStudio</h2>
+<p>Programul de bază R pe care tocmai l-ați instalat nu este însă ușor de folosit. Iar dacă tocmai faceți o tranziție dinspre programe cu intefață grafică precum SPSS, lucrurile pot părea chiar dramatice. De aceea partea a doua a drumului nostru implică descărcarea și instalarea RStudio.</p>
+<p>RStudio este un așa numit mediu integrat de dezvoltare (IDE) pentru R. Ce este un IDE contează mai puțin, ce este important însă este că RStudio oferă o interfață grafică solidă și ușor de utilizat pentru R, precum și funcționalitate suplimentară: management al suprafeței de muncă, evidențierea sintaxei, acces ușor la pachete și actualizarea lor, auto-completarea codului și multe alte facilități pe care le vom explora pe întreg parcursul acestei cărți. RStudio vine în două variante: <em>Desktop</em> și <em>Server</em>. Prima variantă este destinată utilizării locale și este cea pe care o dorim. RStudio Desktop poate fi descărcat de la adresa: <a href="https://rstudio.com/products/rstudio/download/#download" class="uri">https://rstudio.com/products/rstudio/download/#download</a>. Alegeți versiunea potrivită sistemului dumneavoastra de operare și descărcați-l.</p>
+<p>Instalarea RStudio este și ea simplă: executați fișierul descărcat, alegeți locația unde va fi efectuată instalarea, și cam atât!</p>
+</section>
+<section id="instalarea-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="instalarea-rstudio">Instalarea RStudio</h2>
+<p>este și ea simplă: executați fișierul descărcat, alegeți locația unde va fi efectuată instalarea, și cam atât!</p>
+<div class="callout-tips callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tips
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Nu uitați să actualizați în mod regulat ambele programe. Pentru R nu există deocamdată o soluție elegantă. Va trebui să descărcați manual de fiecare dată noua versiune, iar instalarea nu va înlocui versiunile mai vechi, care rămân și ele instalate până la o dezinstalare explicită.</p>
+<p>De altfel, nici RStudio nu vă anunță automat de existența actualizărilor. Pentru a căuta o versiune nouă a RStudio, apelați din bara de meniu funcția <code>Help - &gt; Check for Updates</code></p>
+</div>
+</div>
+</section>
+<section id="r-şi-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="r-şi-rstudio">R şi RStudio</h2>
+<ol type="1">
+<li><p>R este limbajul de programare ce execută codul</p></li>
+<li><p>RStudio este un mediu de dezvoltare unde:</p></li>
+</ol>
+<ul>
+<li><p>Scrieți cod</p></li>
+<li><p>Aveţi acces la autocompletare, evidențierea sintaxei</p></li>
+<li><p>Vizualizați date, obiecte și diagrame</p></li>
+<li><p>Obțineți ajutor și documentație privind comenzile și funcțiile</p></li>
+<li><p>Integrați codul în documente cu <code>R Markdown</code>.</p></li>
+</ul>
+</section>
+<section id="prezentarea-mediului-de-lucru" class="level2">
+<h2 class="anchored" data-anchor-id="prezentarea-mediului-de-lucru">Prezentarea mediului de lucru</h2>
+<p>În momentul în care deschideți RStudio veți fi întâmpinați de o serie de patru panouri (sau zone de lucru) asemănătoare cu imaginea de mai jos și anume: <em>sintaxa</em>, <em>consola</em>, <em>mediul de lucru</em>, panou ce mai conțin secțiuni ca <em>istoria</em> și <em>conexiunile</em> precum și un ultim panou de unde se pot accesa secțiunile <em>fișiere, grafice, pachete, ajutorul și vizualizatorul</em>. Ordinea panourilor lor nu este fixă, și nici importantă: În funcție de preferințele fiecăruia, ea poate fi oricând modificată alegând din meniu, <code>tools-&gt;pane layout</code>. La fel, mărimea fiecărei ferestre este variabilă: fiecare are în partea din dreapta sus opțiunea de minimizare sau maximizare. Aveți și posibilitatea unui control mai fin: apăsați si trageți de mijlocul barei ce le separă, în funcție de ce panou este momentan important.</p>
+<section id="panoul-sintaxei" class="level3">
+<h3 class="anchored" data-anchor-id="panoul-sintaxei">Panoul sintaxei</h3>
+<p>Uneori denumit și <code>editorul de comenzi</code>, acest panou vă permite să scrieți și să vă adnotați codul R. Fișierele create aici au extensia .R și sunt de fapt simple fișiere de tip text ce pot fi deschise și cu alte programe de editare de cod, cum ar fi <em>PSPad</em> sau cu banalul editor de text din Windows.</p>
+<p>Totuși, nimic din ce scrieți aici nu va fi evaluat (executat) de R. Pentru asta, liniile de cod trebuie trimise consolei prin apăsarea butonului <em>Run</em>. Ca alternativă mai elegantă, puteți obține același efect prin comanda <code>ctrl+ENTER</code>: linia actuală de cod (unde se află cursorul) va fi evaluată, iar cursorul se va muta în linia de cod imediat următoare, unde cu același <code>ctrl+ENTER</code> puteți merge mai departe în analiză.</p>
+<p>După cum deja bănuiți, RStudio poate fi controlat extrem de ușor prin combinații de tastatură, și ori de câte ori am ocazia am să vă arăt unele extrem de folositoare.</p>
+<blockquote class="blockquote">
+<p>Dacă lucrați cu două sau mai multe monitoare, aveți noroc: ultimele versiuni RStudio permit detașarea panoului sintaxă pentru a fi plasat pe alt monitor prin butonul <code>Show in New Window</code>.</p>
+</blockquote>
+</section>
+<section id="consola" class="level3">
+<h3 class="anchored" data-anchor-id="consola">Consola</h3>
+<p>Locul unde se intâmpla “magia”: rezultatele analizelor vor fi expuse în aici. Evident puteți introduce și aici comenzi dar ele (spre deosebire de panoul sintaxei), nu vor fi stocate permament și de aceea vă recomand să folosiți consola doar pentru introducerea unor linii de cod pentru testarea lor. De aceea poate cea mai utilă comandă de tastatură în consolă este <code>săgeata în sus</code> cu care puteți trece repde in revistă ultimele comenzi introduse și să le executați din nou. Este extrem de folositoare când o propoziție de cod trebuie reevaluată cu doar un singur parametru schimbat. Dacă consola a devenit mult prea plină, combinația <code>ctrl+L</code> va șterge cu buretele toată suprafața.</p>
+<p>Consola în RStudio nu se rezumă însă doar la a permite introducerea de comenzi, așa ca în interfața R standard, ci conține o serie de funcții extrem de utile. Vom constata că pe măsură ce scriem text se va deschide o listă cu toate comenzile ce încep cu caracterele tastate. Mai mult decât atât, lista este ordonată după comenzile utilizate recent iar dacă selectăm o comandă și apăsăm tasta <code>Tab</code>, RStudio o va introduce automat. Deoarece este puțin probabil să existe cineva care să fi memorat toate funcțiile și comenzile R, această facilitate, numită <em>completare automată</em>, ușurează enorm atât învățarea, cât și utilizarea limbajului R.</p>
+<p>Cu ajutorul săgeților în sus și în jos putem naviga prin istoricul comenzilor date iar dacă ținem apăsată tasta „Ctrl” în timp ce apăsăm și pe săgeata în sus, vom deschide o fereastră cu întregul istoric al lor. Astfel putem vizualiza toată lista de comenzi și să alegem exact comanda dorită.</p>
+</section>
+<section id="panoul-mediului-de-lucru-istorie" class="level3">
+<h3 class="anchored" data-anchor-id="panoul-mediului-de-lucru-istorie">Panoul mediului de lucru, istorie</h3>
+<p>Secțiunea „Environment” (sau mediul de lucru) va fi una dintre cele mai utilizate, deoarece listează toate obiectele încărcate în mediul R, incluzând structurile de date, valorile, rezultatele, funcțiile etc. Acest panou mai conține comenzi, care deși importante, sunt efectuate rar sau au alternative in alte structuri de comandă ale RStudio. O astfel de redundanță este comanda <code>Import dataset</code>. Este folosită ca prim-pas în citirea datelor externe de tip Excel, sau fișiere create de programe precum SPSS. Redundanța constă în prezența aceluiași proces în <code>File-&gt;Import dataset...</code>. Opțiunea <code>Global Environment</code> este și ea rar folosită: ea oferă o privire asupra pachetelor active (despre pachete ceva mai târziu).</p>
+<p>Istoria codurilor executate este ultimul aspect mai important aici. Deși nu vă recomand să vă încărcați memoria acum, trebuie să știți că RStudio stochează toate comenzile introduse vreodată în consolă într-un fișier, la care aveți aici acces. Fiind stocată extern, această istorie vă va fi accesibilă și după ce ați inchis programul. Este utilă în cazuri extreme, de care vă veți aminti.</p>
+</section>
+<section id="fișiere-grafice-pachete" class="level3">
+<h3 class="anchored" data-anchor-id="fișiere-grafice-pachete">Fișiere, grafice, pachete</h3>
+<p>Ultimul panou pe lista noastră grupează controlul asupra unor funcții diverse din mediul R:</p>
+<ol type="1">
+<li><p>Fișiere. În această secțiunie puteți accesa diversele fișiere aflate in directorul activ. Puteți să creați directoare suplimentare pentru a face ordine, puteți șterge, redenumi sau muta fișiere existente.</p></li>
+<li><p>Grafice (<em>Plots</em>). Aici vor fi afișate rezultatele grafice ale analizelor, precum și opțiunile de exportare în diverse formate cum ar fi imagini <code>.jpg</code> sau <code>.tiff</code>.sau direct in fișiere de tip <code>.pdf</code>. Vizualizarea grafică a datelor dumneavoastră este un element esențial în procesul științific, așa că vom petrece destul de mult timp în aceasta secțiune.</p></li>
+<li><p>Pachete. Secțiunea pachete oferă aproape toate opțiunile necesare pentru lucrul cu pachete in R. Ce sunt pachetele vom afla imediat mai încolo, dar e de ajuns să știți momentan că din această secțiune puteți instala și actualiza pachete. Tot aici le puteți activa și dezactiva prin simpla bifare a opțiunii din fața pachetului dorit.</p></li>
+<li><p>Ajutor. R vine cu o paletă largă de opțiuni de ajutor. Una din ele este această secțiune, care vă ofera informatii suplimentare despre funcțiile din pachetele instalate , dar și exemple de folosire sau documentație suplimentară.</p></li>
+<li><p>Vizualizatorul. Această ultimă secțiune permite vizualizarea unor rezultate generate de anumite pachete R sau de aplicațiile create cu ajutorul limbajului R, rezultate ce pot lua forma unor rapoarte foarte aspectuoase dacă se folosesc o serie de pachete specializate, cum ar fi, de exemplu, cele care permit scrierea de cod „markdown”, un alt limbaj destul de ușor, specializat în formatarea avansată a unui text.</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="cum-folosim-r" class="level1">
+<h1>Cum folosim R?</h1>
+<ol type="1">
+<li>Prin consolă</li>
+</ol>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Introduceți comenzi individuale în fereastra de consolă</li>
+<li>Excelent pentru a testa comenzi individuale pentru a vedea ce se întâmplă.</li>
+<li>Nimic este salvat şi nu rezultatle nu se pot reproduce! Şi de aceea mai mult folosit pentru punctele 1 şi 2.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span><span class="sc">+</span><span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>## [1] 4</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mpg<span class="sc">$</span>hwy)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   12.00   18.00   24.00   23.44   27.00   44.00</code></pre>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Prin panoul de sintaxă</li>
+</ol>
+<ul>
+<li>Panoul sursă este un editor de text.</li>
+<li>Creați fișiere .R: toate comenzile de intrare într-o singură sintaxă</li>
+<li>Comentați codul cu <code>#</code></li>
+<li>Poate rula oricare sau toate scripturile deodată</li>
+<li>Puteți salva, reproduce și trimite altora!</li>
+</ul>
+<ol start="3" type="1">
+<li>Pentru RMarkdown</li>
+</ol>
+</section>
+<section id="pentru-orele-următoare" class="level1">
+<h1>Pentru orele următoare:</h1>
+<ol type="1">
+<li>Obiecte</li>
+<li>Forme de date</li>
+<li>Pachete</li>
+<li>Funcţii</li>
+</ol>
+</section>
+<section id="ceva-mai-departe-obiecte-funcții-pachete" class="level1">
+<h1>Ceva mai departe: obiecte, funcții, pachete</h1>
+<section id="totul-dar-absolut-totul-în-r-este-un-obiect." class="level2">
+<h2 class="anchored" data-anchor-id="totul-dar-absolut-totul-în-r-este-un-obiect.">Totul, dar absolut totul în R este un <strong>obiect</strong>.</h2>
+<p>Crearea unui obiect se face prin atribuire <strong><code>&lt;-</code></strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>obiect.nou <span class="ot">&lt;-</span> <span class="dv">27</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>iar redarea unui obiect se face prin simpla lui numire:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>obiect.nou</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 27</code></pre>
+</div>
+</div>
+<p>Obiectele pot fi numite oricum, dar nu pot <em>incepe</em> cu numere. Încercați să fiți cât mai expliciți cu numele obiectelor: RStudio are o funcție de autocompletare, deci numele <strong>luuuuungi</strong> sunt mai bune decât cele criptice ca <strong>Var_1</strong>.</p>
+</section>
+<section id="tipuri-de-obiecte" class="level2">
+<h2 class="anchored" data-anchor-id="tipuri-de-obiecte">Tipuri de obiecte</h2>
+<section id="numerice" class="level3">
+<h3 class="anchored" data-anchor-id="numerice">Numerice</h3>
+<p>Adică doar un simplu număr, ce poate fi modificat matematic:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">8</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>x<span class="sc">*</span>(y<span class="sc">^</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 320</code></pre>
+</div>
+</div>
+</section>
+<section id="caractere-strings" class="level3">
+<h3 class="anchored" data-anchor-id="caractere-strings">Caractere (“<em>strings</em>”):</h3>
+<p>Text, text, text şi iar text. MUSAI să fie introdus între ghilimele şi poate conţine spaţii libere</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>adresa.mea <span class="ot">&lt;-</span> <span class="st">"Strada Speranţei, la parter"</span> </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>adresa.mea</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Strada Speranţei, la parter"</code></pre>
+</div>
+</div>
+</section>
+<section id="logice" class="level3">
+<h3 class="anchored" data-anchor-id="logice">Logice</h3>
+<p>Sunt de tip binar şi indică situaţii adevărate sau false (<code>TRUE</code>; <code>FALSE</code>). Le veţi folosi cel mai des pentru a evalua condiţii:</p>
+<ul>
+<li><code>&gt;</code>, <code>&lt;</code>: mai mare, mai mic</li>
+<li><code>&gt;=</code>, <code>&lt;=</code>: mai mare sau egal, mai mic sau egal</li>
+<li><code>==</code>, <code>!=</code>: la fel, egal; sau nu este egal</li>
+<li><code>&amp;</code>: “ŞI”</li>
+<li><code>|</code>: “SAU”</li>
+</ul>
+</section>
+<section id="factori" class="level3">
+<h3 class="anchored" data-anchor-id="factori">Factori</h3>
+<p>Factorii conţin informaţii despre categorii, de obicei ce se exclud reciproc. Sex, categorii de salarizare, cluburi sportive, şamd.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] UTA      FCSB     DINAMO   CFR CLUJ
+Levels: CFR CLUJ DINAMO FCSB UTA</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="tipuri-de-date" class="level2">
+<h2 class="anchored" data-anchor-id="tipuri-de-date">Tipuri de date</h2>
+<section id="vectori-colecție-de-valori-ce-aparțin-aceluiași-tip-de-date-numere-caractere-şamd." class="level3">
+<h3 class="anchored" data-anchor-id="vectori-colecție-de-valori-ce-aparțin-aceluiași-tip-de-date-numere-caractere-şamd.">Vectori: colecție de valori ce aparțin aceluiași tip de date: numere, caractere, şamd.</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>vector.numeric  <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>vector.caracter <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>vector.numeric</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2 4 5 6</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>vector.caracter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "a" "b" "c"</code></pre>
+</div>
+</div>
+</section>
+<section id="matrice" class="level3">
+<h3 class="anchored" data-anchor-id="matrice">Matrice</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>matrice <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>, <span class="at">nrow =</span> <span class="dv">3</span>, <span class="at">ncol =</span> <span class="dv">3</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>matrice</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9</code></pre>
+</div>
+</div>
+</section>
+<section id="rezultatele-unor-analize-statistice" class="level3">
+<h3 class="anchored" data-anchor-id="rezultatele-unor-analize-statistice">Rezultatele unor analize statistice</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span><span class="fu">lm</span>(Ozone<span class="sc">~</span>Solar.R, <span class="at">data=</span>airquality)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>fit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = Ozone ~ Solar.R, data = airquality)
+
+Coefficients:
+(Intercept)      Solar.R  
+    18.5987       0.1272  </code></pre>
+</div>
+</div>
+<p>Dar cea mai uzuală formă a datelor este:</p>
+</section>
+<section id="secvența-de-date-data-frame" class="level3">
+<h3 class="anchored" data-anchor-id="secvența-de-date-data-frame">Secvența de date** (<code>data frame</code>)</h3>
+<ul>
+<li>95 % din lucrul in R este cu <code>data frames</code>, iar azi nu va fi o excepție</li>
+<li>fiecare coloană este un vector, iar fiecare rând este o observare.</li>
+<li>Sunt de fapt combinaţii de vectori</li>
+<li>conține de cele mai multe ori date brute, de exemplu:</li>
+</ul>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>  Ozone Solar.R Wind Temp Month Day
+1    41     190  7.4   67     5   1
+2    36     118  8.0   72     5   2
+3    12     149 12.6   74     5   3
+4    18     313 11.5   62     5   4
+5    NA      NA 14.3   56     5   5</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="folosirea-obiectelor" class="level2">
+<h2 class="anchored" data-anchor-id="folosirea-obiectelor">Folosirea obiectelor</h2>
+<p>Numele obiectului reprezintă informația aflată în obiect, și deci orice operație cu obiectul manipulează și conținutul.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>obiect.nou <span class="ot">&lt;-</span> <span class="dv">27</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>obiect.nou <span class="sc">+</span> <span class="dv">10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 37</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>obiect.nou <span class="sc">+</span> obiect.nou</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 54</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(obiect.nou)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5.196152</code></pre>
+</div>
+</div>
+<p>Odată create, obiectele apar in mediul de lucru:</p>
+<p><img src="https://metricsf20.classes.ryansafner.com/images/renvironmentdf2.png" class="img-fluid" data-fig-align="center"> ::: callout-caution</p>
+</section>
+<section id="atenţie" class="level2">
+<h2 class="anchored" data-anchor-id="atenţie">Atenţie</h2>
+<p>Obiectele de tip <code>data.frame</code> pot fi vizualizate în RStudio, printr-un click pe obiectul dorit, dar ele nu pot fi editate, modificate aici. Această operaţie este doar pentru vizualizare. :::</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://metricsf20.classes.ryansafner.com/images/rdfview.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p><strong>În general, 99% din tot timpul pe care îl veţi petrece in R va fi alocat generării de obiecte şi aplicarea unor operaţii, funcţii pe aceste obiecte</strong></p>
+</section>
+</section>
+<section id="funcţii" class="level1">
+<h1>Funcţii</h1>
+<p>Calculele simple nu sunt o problemă in R, dar nici în SPSS sau STATA. De exemplu, a transforma în 34 de metri în kilometri se rezolvă rapid. Introduceți în consolă instrucțiunea <code>34/1000</code> și apăsați <code>ENTER</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="dv">34</span><span class="sc">/</span><span class="dv">1000</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.034</code></pre>
+</div>
+</div>
+<ul>
+<li>nu totul este atât de simplu. De exemplu, calculați <code>de mână</code> un coeficientul <code>alfa</code> pentru 10 scale.</li>
+</ul>
+<hr>
+<section id="anatomia-unei-funcții" class="level2">
+<h2 class="anchored" data-anchor-id="anatomia-unei-funcții">Anatomia unei funcții</h2>
+<p>Spre deosebire de celelalte programe statistice, R ne dă posibilitatea de a abrevia, a scurta seturi intregi de instrucțiuni într-o singură comandă numită <em>funcție</em>. De exemplu:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>metri_in_km <span class="ot">&lt;-</span> <span class="cf">function</span>(metri) <span class="co"># Definirea funcției</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  km <span class="ot">&lt;-</span> (metri<span class="sc">/</span><span class="dv">1000</span>)  <span class="co"># Calculul, instrucțiunea propriu-zisă</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(km)          <span class="co"># Oprește funcția si arată rezultatul</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>R îi dă utilizatorului puterea de a-și crea și configura propriile funcții după necesitați și este motivul pentru care R a devenit atât de popular. Funcţiile in R sunt <strong>vectorizate</strong>: adică, aplicarea unei funcţii pe un vector, implică aplicarea ei pe fiecare element al vectorului respectiv. Dar nu tot timpul: uneori avem nevoie de rezultate agregat (medie, abatere standard).</p>
+</section>
+</section>
+<section id="pachetele-r" class="level1">
+<h1>Pachetele R</h1>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>Pachetele sunt extensii R. Pachetele R conțin cod, date și documentație într-un format de colectare standardizat care poate fi instalat, de obicei prin intermediul unui depozit de software centralizat, cum ar fi CRAN (Comprehensive R Archive Network).</p>
+<p>Colecție de: * date * fișiere de ajutor * și funcții</p>
+</div><div class="column" style="width:40%;">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/List-of-r-packages.png" class="img-fluid" data-fig-align="right" width="300"> Imagine: Wikipedia.</p>
+</div>
+</div>
+<section id="instalarea-și-actualizarea-pachetelor" class="level3">
+<h3 class="anchored" data-anchor-id="instalarea-și-actualizarea-pachetelor">Instalarea și actualizarea pachetelor</h3>
+<p>Pachetele de care aveți nevoie pot proveni din mai multe surse. Totuși, în cel mai probabil caz, pachetul se află pe CRAN. CRAN reprezintă o abreviere a <code>The Comprehensive R Archive Network</code> și definește o rețea de servere FTP și web împrăștiate pe toate planeta ce păstrează sincronizate între ele cele mai noi versiuni din documentația, codul și pachetele R. Analogie: CRAN este un fel de Google Play Store al R.</p>
+<p>Cum instalăm un pachet aflat pe CRAN? În panoul de unde se pot accesa și fișierele, apăsați pe <code>packages</code>. În fereastra următoare introduceți numele pachetului dorit de pe CRAN și confimați instalarea cu recomandarea de a nu modifica valorile predefinite din fereastră. De exemplu, instalarea pachetului <code>psych</code> se face așa:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagini/CRAN.PNG" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>Puteți obține același rezultat prin introducerea în consolă a următoarei comenzi, urmată de tasta <code>ENTER</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"psych"</span>, <span class="at">dependencies =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>care va avea același efect. Argumentul <code>dependencies</code>(identic cu opțiunea <code>install dependencies</code> bifată în figura de mai sus) are ca scop instalarea și a altor pachete de care depinde buna funcționare a pachetlului dorit.</p>
+<p>Lista pachetelor instalate in sistem poate fi obținută prin:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<blockquote class="blockquote">
+<p>Am menționat la început că sursa pachetelor poate diferi și deci nu toate pachetele de care aveți nevoie se află pe CRAN, intrucât există mai multe criterii care trebuiesc indeplinite înainte ca ele să fie stocate pe rețea. Mulți autori publică pe <code>GitHub</code> (un serviciu pentru dezvoltatori software) pachete ce se afla înca în stadiul de dezoltare. Cum instalați pachete de pe <code>GitHub</code>, vă spun la momentul potrivit, dar puteți deja incepe prin a exersa ce ați invățat în acest capitol instalând de pe CRAN pachetul <code>devtools</code>.</p>
+</blockquote>
+</section>
+<section id="încărcarea-și-descărcarea-pachetelor" class="level3">
+<h3 class="anchored" data-anchor-id="încărcarea-și-descărcarea-pachetelor">Încărcarea și descărcarea pachetelor</h3>
+<p>Odată instalate, pachetele R se vor afla tot timpul pe calculatorul vostru, dar nu pot fi folosite până nu sunt încărcate. În esență, această încărcare va trebui efectuată de fiecare dată când aveți nevoie de conținutul pachetului respectiv iar ea se face face prin comanda <code>library()</code>: între paranteze introduceți ca argument numele pachetului dorit:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Dacă nu știți ce pachete sunt incărcate momentan, folosiți comanda:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Mai trebuie spus că există înca o posibilitate de a încărca temporar un pachet fără a folosi funcția <code>library()</code>. Folosind notația <code>nume_pachet::nume_funcție</code>, îi puteți spune în mod explicit R de ce funcție și din ce pachet anume aveți nevoie. De exemplu,</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>psych<span class="sc">::</span><span class="fu">alpha</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>încarcă funcția <code>alpha</code> din pachetul <code>psych</code>, dar doar pentru aceasta linie de cod! Pachetul <code>psych</code> va fi descărcat imediat dupa terminarea comenzii.</p>
+<blockquote class="blockquote">
+<p>Tineți minte notația <code>nume_pachet::nume_funcție</code> pentru că vă va fi de folos pe tot parcursul utilizării R. Multe pachete au funcții cu același nume, iar adresarea directă va fi salvatoare.</p>
+</blockquote>
+</section>
+</section>
+<section id="ce-subiecte-mai-avem-de-parcurs" class="level1">
+<h1>Ce subiecte mai avem de parcurs:</h1>
+<ol type="1">
+<li>Grafice cu <code>ggplot2</code></li>
+<li>Manipulare de date cu <code>dplyr</code></li>
+<li>RMarkdown</li>
+<li>Gata :)</li>
+</ol>
+</section>
+<section id="vizualizarea-datelor-cu-ggplot2" class="level1">
+<h1>Vizualizarea datelor cu GGplot2</h1>
+<p>R vine cu propriul sistem de vizualizare al datelor, dar este rudimentar şi limitat din punct de vedere estetic. Pentru a exemplifica, avem nevoide de date.</p>
+<section id="pachetul-gapminder" class="level2">
+<h2 class="anchored" data-anchor-id="pachetul-gapminder">Pachetul gapminder</h2>
+<p>Pentru exemplele care vin, vom folosi un set de date numit <code>gapminder</code> pe care il veţi găsi pe în pachetul cu acelaşi nume aflat pe <code>CRAN</code>. Gapminder oferă un extras din datele disponibile la Gapminder.org. Pentru fiecare dintre cele 142 țări, pachetul oferă valori pentru speranța de viață (<code>lifeExp</code>), PIB pe cap de locuitor (<code>gdpPercap</code>), și populația (<code>pop</code>), la fiecare cinci ani, din 1952 până în 2007.</p>
+<ul>
+<li>Instalaţi-l, aşa cum am văzut în sliderurile anteriorare.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"gapminder"</span>) <span class="co"># instalare de pachet</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="exemple-folosind-pachetul-de-bază." class="level2">
+<h2 class="anchored" data-anchor-id="exemple-folosind-pachetul-de-bază.">Exemple folosind pachetul de bază.</h2>
+<p>O privire asupra datelor:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"gapminder"</span>)          <span class="co"># activare pachet</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(gapminder)               <span class="co"># primele 10 randuri din setul de date</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 6
+  country     continent  year lifeExp      pop gdpPercap
+  &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+1 Afghanistan Asia       1952    28.8  8425333      779.
+2 Afghanistan Asia       1957    30.3  9240934      821.
+3 Afghanistan Asia       1962    32.0 10267083      853.
+4 Afghanistan Asia       1967    34.0 11537966      836.
+5 Afghanistan Asia       1972    36.1 13079460      740.
+6 Afghanistan Asia       1977    38.4 14880372      786.</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(gapminder<span class="sc">$</span>gdpPercap)     </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Sau un <code>boxplot</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(gapminder<span class="sc">$</span>gdpPercap)     </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Dar putem crea şi grafice mai complexe, de exemplu Produsul Intern Brut (´gdpPercap`) în funcţie de continent.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(gdpPercap <span class="sc">~</span> continent, <span class="at">data =</span> gapminder)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-26-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Notaţia este clasică in R:</p>
+<ul>
+<li>variabila dependentă se află pe partea stângă a tildei <code>~</code>, iar</li>
+<li>variabila independentă pe dreapta</li>
+<li>tilda se citeşte ca “în funcţie de”.</li>
+<li>o veţi regăsi mai târziu peste tot. (De ex. regressii)</li>
+</ul>
+<p>Un alt exemplu:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lifeExp <span class="sc">~</span> gdpPercap, <span class="at">data =</span> gapminder)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-27-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="grafice-avansate-cu-ggplot2-parte-a-tidyverse" class="level1">
+<h1>Grafice avansate cu ggplot2 (Parte a Tidyverse)</h1>
+<section id="ce-este-tidyverse" class="level2">
+<h2 class="anchored" data-anchor-id="ce-este-tidyverse">Ce este “Tidyverse”</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>O colecție de pachete moderne ce au in comun aceeași filozofie, aceleași bune practici, și sunt dezvoltate pentru a lucra bine împreună.</p>
+<p>Aceste pachetele au, printre altele, funcții pentru aranjarea, ordonarea, citirea/scrierea, analiza și vizualizarea datelor.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>) <span class="co">#instalare</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)          <span class="co">#incarcare</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Bineînțeles puteți încărca doar pachetele de care aveți nevoie, nu neapărat întreaga suită.</p>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hbctraining.github.io/Intro-to-R/img/tidyverse_website.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Tidyverse</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="ggplot" class="level2">
+<h2 class="anchored" data-anchor-id="ggplot">ggplot</h2>
+<ul>
+<li>Parte din <code>tidyverse</code></li>
+<li><code>gg</code> provine de la <code>grammar of graphics</code></li>
+<li>Are o curbă de învațare mai abruptă, dar oferă recompense mai mari.</li>
+</ul>
+<p>În principiu:</p>
+<ul>
+<li>Furnizați datele, spuneți-i lui ggplot2 cum să mapeze variabilele în funcție de aspectul estetic, ce primitive grafice să folosească, iar ggplot2 se ocupă de detalii.</li>
+</ul>
+</section>
+<section id="exemple-de-ggplot" class="level2">
+<h2 class="anchored" data-anchor-id="exemple-de-ggplot">Exemple de ggplot</h2>
+<p><img src="https://metricsf20.classes.ryansafner.com/images/bbplot.png" class="img-fluid"></p>
+</section>
+<section id="exemple-de-ggplot-2" class="level2">
+<h2 class="anchored" data-anchor-id="exemple-de-ggplot-2">Exemple de ggplot (2)</h2>
+<p><img src="https://r-graph-gallery.com/283-the-hourly-heatmap_files/figure-html/thecode-1.png" class="img-fluid"></p>
+</section>
+<section id="ideea-din-spatele-ggplot" class="level2">
+<h2 class="anchored" data-anchor-id="ideea-din-spatele-ggplot">Ideea din spatele ggplot</h2>
+<p>Orice grafic poate fi construit din aceleași componente:</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><code>Date care vor fi redate (data)</code></li>
+<li><code>Mapări estetice (date către marcaje) (aes)</code></li>
+<li><code>Obiecte geometrice pe grafic (geom_)</code></li>
+<li>Scale care definesc intervalul de valori (scale)</li>
+<li>Coordonate pentru organizarea locației (coord)</li>
+<li>Etichete care descriu scala și marcajele (labels)</li>
+<li>Fațetare pe subgrupe (facet)</li>
+<li>Teme de stilizare (theme)</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img src="https://metricsf20.classes.ryansafner.com/images/gglayers.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="cum-arată-structura-de-bază" class="level2">
+<h2 class="anchored" data-anchor-id="cum-arată-structura-de-bază">Cum arată structura de bază:</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> DATA, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> VARIABILA1, <span class="at">y =</span> VARIABILA2))<span class="sc">+</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>         <span class="fu">FUNCTIE_GEOMETRICA</span>()<span class="er">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="stratul-cu-date-și-maparea-variabilelor" class="level3">
+<h3 class="anchored" data-anchor-id="stratul-cu-date-și-maparea-variabilelor">Stratul cu date și maparea variabilelor</h3>
+<p>R crează un eşafod, legat de conţinutul variabilelor, dar nu produce nici un grafic. De ce? Pentru cu ştie ce fel de grafic trebuie să producă. Pentru asta, trebuie sa-i spunem ce fel de obiect geometric trebuie să folosească.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-30-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="stratul-cu-numărul-trei-atributele-geometrice." class="level3">
+<h3 class="anchored" data-anchor-id="stratul-cu-numărul-trei-atributele-geometrice.">Stratul cu numărul trei: atributele geometrice.</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp))<span class="sc">+</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-31-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<ul>
+<li>Straturile se adaugă cu un + la sfârșitul liniei de cod</li>
+<li>Recomandarea mea: o linie de cod nouă după fiecare +</li>
+<li>Constriți strat cu strat</li>
+</ul>
+</section>
+<section id="maparea-aestetica" class="level3">
+<h3 class="anchored" data-anchor-id="maparea-aestetica">Maparea AES(tetica)</h3>
+<p>Leagă datele de parametri sau elemente vizuale</p>
+<p><img src="https://www.dropbox.com/s/d226uyjrru1sn36/ggplotaes.png?raw=1" class="img-fluid"></p>
+<p>sau…</p>
+<p><img src="https://www.dropbox.com/s/e1nvb7x330c7ruk/aes2.png?raw=1" class="img-fluid"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">color =</span> continent))<span class="sc">+</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-32-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="obiectele-geometrice" class="level3">
+<h3 class="anchored" data-anchor-id="obiectele-geometrice">Obiectele geometrice</h3>
+<p>Ce fel de <code>geom_</code>? Depinde de ce doriți să reprezentați.</p>
+<p><img src="https://www.dropbox.com/s/xui9bxccztlqmyz/geoms.gif?raw=1" class="img-fluid"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">color =</span> continent))<span class="sc">+</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()<span class="sc">+</span></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using method = 'loess' and formula 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-33-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="obiectele-geometrice-ii" class="level3">
+<h3 class="anchored" data-anchor-id="obiectele-geometrice-ii">Obiectele geometrice II</h3>
+<p>Anumite obiecte geometrice modifică statistic datele: de exemplu <code>geom_boxplot</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">color =</span> continent))<span class="sc">+</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-34-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> continent, <span class="at">y =</span> lifeExp, <span class="at">color =</span> continent))<span class="sc">+</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-35-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="faţete" class="level3">
+<h3 class="anchored" data-anchor-id="faţete">Faţete</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">color =</span> continent))<span class="sc">+</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()<span class="sc">+</span></span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> continent)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using method = 'loess' and formula 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-36-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="etichete" class="level3">
+<h3 class="anchored" data-anchor-id="etichete">Etichete</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">color =</span> continent))<span class="sc">+</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()<span class="sc">+</span></span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Produsul Intern Brut"</span>,</span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Speranta de Viata"</span>,</span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Relatia PIB/Speranta de viata"</span>,</span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Cresterea GDP mareste speranta de viata"</span>,</span>
+<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Sursa: Gapminder"</span>,</span>
+<span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">color =</span> <span class="st">"Continent"</span>)<span class="sc">+</span></span>
+<span id="cb55-10"><a href="#cb55-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> continent)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using method = 'loess' and formula 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-37-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="scale" class="level3">
+<h3 class="anchored" data-anchor-id="scale">Scale</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>scale<span class="sc">+</span>_<span class="sc">+</span><span class="er">&lt;</span>aes<span class="sc">&gt;+</span>_<span class="sc">+</span><span class="er">&lt;</span>type<span class="sc">&gt;+</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>unde AES este parametrul de ajustat, TYPE este tipul de parametru. De exemplu: <code>scale_color_brewer(palette = "Set1")</code> modifica COLOR cu paleta BREWER sau, <code>scale_x_log10()</code> modifica axa X prin logaritmare.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">color =</span> continent))<span class="sc">+</span></span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()<span class="sc">+</span></span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Produsul Intern Brut"</span>,</span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Speranta de Viata"</span>,</span>
+<span id="cb58-6"><a href="#cb58-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Relatia PIB/Speranta de viata"</span>,</span>
+<span id="cb58-7"><a href="#cb58-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Cresterea GDP mareste speranta de viata"</span>,</span>
+<span id="cb58-8"><a href="#cb58-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Sursa: Gapminder"</span>,</span>
+<span id="cb58-9"><a href="#cb58-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">color =</span> <span class="st">"Continent"</span>)<span class="sc">+</span></span>
+<span id="cb58-10"><a href="#cb58-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> continent)<span class="sc">+</span></span>
+<span id="cb58-11"><a href="#cb58-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_brewer</span>(<span class="at">palette =</span> <span class="st">"Set1"</span>)<span class="sc">+</span></span>
+<span id="cb58-12"><a href="#cb58-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using method = 'loess' and formula 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-39-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="teme" class="level3">
+<h3 class="anchored" data-anchor-id="teme">Teme</h3>
+<p>Tema modifică aspectul decorațiunilor de pe grafic (lucruri care nu sunt puse în corespondență cu datele)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">color =</span> continent))<span class="sc">+</span></span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()<span class="sc">+</span></span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Produsul Intern Brut"</span>,</span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Speranta de Viata"</span>,</span>
+<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Relatia PIB/Speranta de viata"</span>,</span>
+<span id="cb60-7"><a href="#cb60-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Cresterea GDP mareste speranta de viata"</span>,</span>
+<span id="cb60-8"><a href="#cb60-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Sursa: Gapminder"</span>,</span>
+<span id="cb60-9"><a href="#cb60-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">color =</span> <span class="st">"Continent"</span>)<span class="sc">+</span></span>
+<span id="cb60-10"><a href="#cb60-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> continent)<span class="sc">+</span></span>
+<span id="cb60-11"><a href="#cb60-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_brewer</span>(<span class="at">palette =</span> <span class="st">"Set1"</span>)<span class="sc">+</span></span>
+<span id="cb60-12"><a href="#cb60-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using method = 'loess' and formula 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-40-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="mici-modificari" class="level3">
+<h3 class="anchored" data-anchor-id="mici-modificari">Mici modificari</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp, <span class="at">color =</span> continent))<span class="sc">+</span></span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha=</span>.<span class="dv">1</span>)<span class="sc">+</span></span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> lm)<span class="sc">+</span></span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Produsul Intern Brut"</span>,</span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Speranta de Viata"</span>,</span>
+<span id="cb62-6"><a href="#cb62-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Relatia PIB/Speranta de viata"</span>,</span>
+<span id="cb62-7"><a href="#cb62-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Cresterea GDP mareste speranta de viata"</span>,</span>
+<span id="cb62-8"><a href="#cb62-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Sursa: Gapminder"</span>,</span>
+<span id="cb62-9"><a href="#cb62-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">color =</span> <span class="st">"Continent"</span>)<span class="sc">+</span></span>
+<span id="cb62-10"><a href="#cb62-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> continent)<span class="sc">+</span></span>
+<span id="cb62-11"><a href="#cb62-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_brewer</span>(<span class="at">palette =</span> <span class="st">"Set1"</span>, <span class="at">guide =</span> <span class="st">"none"</span>)<span class="sc">+</span></span>
+<span id="cb62-12"><a href="#cb62-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-41-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Câteva remarci:</p>
+<ul>
+<li>Ca de obicei, graficele se pot salva într-un obiect prin ´&lt;-`.</li>
+<li>Dacă graficul va fi stocat, el nu va fi arătat în previzualizare</li>
+<li>Executarea numelui readuce graficul “în existență”.</li>
+<li>Exportul prin panoul de vizualizare</li>
+</ul>
+<p>##Concluzie:</p>
+<p>#luatedepetwitter</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://pbs.twimg.com/media/FeJmBn5XEAM_kFI?format=png&amp;name=4096x4096.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">@tanya_shapiro</figcaption><p></p>
+</figure>
+</div>
+<p>Surse.</p>
+<p>https://ggplot2-book.org/</p>
+
+</section>
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-lawlor2022" class="csl-entry" role="doc-biblioentry">
+Lawlor, Jake, Francis Banville, Norma-Rocio Forero-Muñoz, Katherine Hébert, Juan Andrés Martínez-Lanfranco, Pierre Rogy, and A. Andrew M. MacDonald. 2022. <span>“Ten Simple Rules for Teaching Yourself R.”</span> Edited by Scott Markel. <em>PLOS Computational Biology</em> 18 (9): e1010372. <a href="https://doi.org/10.1371/journal.pcbi.1010372">https://doi.org/10.1371/journal.pcbi.1010372</a>.
+</div>
+<div id="ref-thulin2021" class="csl-entry" role="doc-biblioentry">
+Thulin, M. 2021. <em>Modern Statistics with r: From Wrangling and Exploring Data to Inference and Predictive Modelling</em>. Thulin Consulting Ab. <a href="https://books.google.de/books?id=lrc6EAAAQBAJ">https://books.google.de/books?id=lrc6EAAAQBAJ</a>.
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+<script src="index_files/libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
