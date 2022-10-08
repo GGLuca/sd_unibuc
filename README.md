@@ -36,15 +36,15 @@ Finalizare: Colocviu (Dată nespecificată încă)
 
 | Data            | Ora           | General                       | Subiect                         | Slideuri |
 |:--------------|:--------------|:--------------|:--------------|:--------------|
-| 7.10            | 09:00 - 14:00 | Introducere, mediu de lucru   | R/RStudio 1                     | 🐣       |
-| 8.10            | 09:00 - 14:00 |                               | R/Rstudio 2                     | 🐥       |
-| 28.10           | 09:00 - 11:00 | Fundaţia inferenţei Bayesiene | Teorema lui Bayes               | 🐤       |
-| 29.10           | 09:00 - 11:00 |                               | Beta-Binomial                   | 🐔       |
-| 4.11            | 09:00 - 11:00 |                               | Normal-Normal                   | 🐱       |
-| 5.11            | 09:00 - 11:00 | Calcul Bayesian               | Markov Chain Monte Carlo (MCMC) | 🐶       |
-| 25.11           | 09:00 - 11:00 |                               | Diagnostic MCMC                 | 🐴       |
-| 26.11           | 09:00 - 14:00 | Extensii                      | Regressie Logistica             | 🐻       |
-| 9.12 (*ONLINE*) | 09:00 - 14:00 |                               | Regressie Poisson               | 🐉       |
+| 7.10            | 10:00 - 14:00 | Introducere, mediu de lucru   | R/RStudio 1                     | 🐣       |
+| 8.10            | 10:00 - 14:00 |                               | R/Rstudio 2                     | 🐥       |
+| 28.10           | 19:00 - 12:00 | Fundaţia inferenţei Bayesiene | Teorema lui Bayes               | 🐤       |
+| 29.10           |               |                               | Beta-Binomial                   | 🐔       |
+| 4.11            |               |                               | Normal-Normal                   | 🐱       |
+| 5.11            |               | Calcul Bayesian               | Markov Chain Monte Carlo (MCMC) | 🐶       |
+| 25.11           |               |                               | Diagnostic MCMC                 | 🐴       |
+| 26.11           |               | Extensii                      | Regressie Logistica             | 🐻       |
+| 9.12 (*ONLINE*) |               |                               | Regressie Poisson               | 🐉       |
 |                 |               | Colocviu                      |                                 | 🤯       |
 
 **Cunoștințe anterioare**:\
