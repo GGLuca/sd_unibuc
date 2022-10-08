@@ -38,7 +38,7 @@ Finalizare: Colocviu (Dată nespecificată încă)
 |:--------------|:--------------|:--------------|:--------------|:--------------|
 | 7.10            | 10:00 - 14:00 | Introducere, mediu de lucru   | R/RStudio 1                     | 🐣       |
 | 8.10            | 10:00 - 14:00 |                               | R/Rstudio 2                     | 🐥       |
-| 28.10           | 19:00 - 12:00 | Fundaţia inferenţei Bayesiene | Teorema lui Bayes               | 🐤       |
+| 28.10           | 10:00 - 12:00 | Fundaţia inferenţei Bayesiene | Teorema lui Bayes               | 🐤       |
 | 29.10           |               |                               | Beta-Binomial                   | 🐔       |
 | 4.11            |               |                               | Normal-Normal                   | 🐱       |
 | 5.11            |               | Calcul Bayesian               | Markov Chain Monte Carlo (MCMC) | 🐶       |
